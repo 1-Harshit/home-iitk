@@ -1,0 +1,22 @@
+<h3>Bonus 8 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_08_1.txt')">Identity sub matrix</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_08_4.txt')">Mon-MaxDiagSub</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_08_2.txt')">Catch Me If You Can</button><br>
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_08_5.txt')">Sudoku</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_08_3.txt')">Matrix Mania</button><br>
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_08_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

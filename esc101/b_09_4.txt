@@ -1,0 +1,33 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Structures- Pairwise Rectangles Overlap</span><br><small class="category">Bonus9</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">Two rectangles are overlapping, if there is a point that is contained in both the rectangles (including boundaries). 
+You must design a Structure corresponding to a rectangle. <b>You will be graded out of 10 if structs are not used</b>.
+You need to figure out, whether given two axis-aligned rectangles overlap (i.e a rectangle is either horizontal or vertical <b> it is not tilted</b>). 
+
+You are given a sequence of <b>n</b> rectangles. Each rectangle is denoted by the coordinates of it's <b>top left</b> and <b>bottom right point</b>. Each rectangle also has an <b>alphabet as a label</b>. The alphabetical label is from 'a'-'z' and must be assigned automatically in increasing order starting from 'a' as the coordinates are read. <b>You must output the labels of all overlapping pairs in the format label1,label2 such these pairs are printed in lexicographically increasing order. Output each pair only once. </b>
+
+Constraints:
+<b>2 &lt;= N &lt;= 26</b>
+The coordinates of the rectangle's vertices are integers.
+ 
+<b>Input Format: </b>
+The first line consists of the number of rectangles <b>n</b>.
+n lines of input follow containing 4 integers each - The x and y co-ordinates of the top-left point of the rectangle followed by the x and y co-ordinates of the bottom-right point of the rectangle.
+
+<b>Output Format:</b>
+label1, label2
+label3, label4
+...
+
+<b>Sample Input 1:</b>
+3
+1 2 2 1
+0 2 2 0
+-1 10 1 -1
+<b>Sample Output 1:</b>
+a,b
+a,c
+b,c</div>
+                <h5>Start Solving!</h5>
+            </div>

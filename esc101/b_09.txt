@@ -1,0 +1,22 @@
+<h3>Bonus 9 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_09_1.txt')">Sorting Structs</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_09_4.txt')">Point Pairing Party</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_09_2.txt')">Structures- Pairwise Rectangles Overlap</button><br>
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_09_5.txt')">File IO- This is easy too</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_09_3.txt')">FileIO- Just add them up</button><br>
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_09_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

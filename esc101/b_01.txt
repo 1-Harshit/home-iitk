@@ -1,0 +1,20 @@
+<h3>Bonus 1 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_01_1.txt')">A little Determination</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_01_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_01_2.txt')">Escaping the Escapes</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_01_3.txt')">Crossing Lines</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

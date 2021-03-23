@@ -1,0 +1,28 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">I enjoy Jumping</span><br><small class="category">Bonus11</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>[20 Points]</b>
+
+Given an array of integers where each element represents the max number of steps that can be made forward from that element. Write a program to print the minimum number of jumps to reach the end of the array (starting from the first element). If an element is 0, then cannot move through that element. Size of the array can be maximum 20.
+
+<b>INPUT</b>:
+Input has two parts:
+a) Size of the Array
+b) Elements of the Array
+
+<b>OUTPUT</b>:
+An Integer representing the minimum no of steps required to reach the end of the array.
+
+<b>EXAMPLE</b>:
+INPUT: 
+11
+1 3 5 8 9 2 6 7 6 8 9
+OUTPUT: 
+3
+Explanation:
+3 (1 (jump 1) -&gt; 3 (jump 2) -&gt; 8 (jump 7)  -&gt;9) 
+This is one of the possible methods to achieve min jumps.
+
+<b>Note:</b> Few marks will be reserved for good programming practices.</div>
+                <h5>Start Solving!</h5>
+            </div>

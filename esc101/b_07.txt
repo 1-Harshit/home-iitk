@@ -1,0 +1,22 @@
+<h3>Bonus 7 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_07_1.txt')">Reverse String</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_07_4.txt')">Bunny Paths</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_07_2.txt')">Balanced Paranthesis</button><br>
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_07_5.txt')">Robber in Dilemma</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_07_3.txt')">Elfish Strings</button><br>
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_07_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

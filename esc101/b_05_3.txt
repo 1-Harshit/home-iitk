@@ -1,0 +1,35 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Game of primes</span><br><small class="category">Bonus5</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">In the Primeland, there lives a monk who has a special power to check the integrity of a couple. The integrity of a couple can be expressed as a function of the primality of their love attribute. 
+
+Couple (x,y) has the integrity as follows ( x and y are their respective attributes): 
+If x and y are both prime, then it is x+y
+If only x is prime, then it is x
+If only y is prime, it is y
+Else, it is x*y
+
+<b>Guideline :</b>
+Make sure that you code using FUNCTIONS to obtain maximum marks. YOU WILL LOSE MARKS IF THIS GUIDELINE IS NOT FOLLOWED
+
+<b>Input Format:</b>
+Two space separated positive integers, x and y.
+
+<b>Output Format:</b>
+A single line consisting of the integrity of couple. 
+
+<b>Constraints:</b>
+<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-146-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn><mo>&amp;#x2264;</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>&amp;#x2264;</mo><msup><mn>10</mn><mn>4</mn></msup></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1054" style="width: 7.443em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.193em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.134em, 1006.19em, 2.562em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1055"><span class="mn" id="MathJax-Span-1056" style="font-family: MathJax_Main;">2</span><span class="mo" id="MathJax-Span-1057" style="font-family: MathJax_Main; padding-left: 0.301em;">≤</span><span class="mi" id="MathJax-Span-1058" style="font-family: MathJax_Math-italic; padding-left: 0.301em;">x</span><span class="mo" id="MathJax-Span-1059" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-1060" style="font-family: MathJax_Math-italic; padding-left: 0.182em;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-1061" style="font-family: MathJax_Main; padding-left: 0.301em;">≤</span><span class="msubsup" id="MathJax-Span-1062" style="padding-left: 0.301em;"><span style="display: inline-block; position: relative; width: 1.432em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.96em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="mn" id="MathJax-Span-1063" style="font-family: MathJax_Main;">10</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.402em; left: 1.015em;"><span class="mn" id="MathJax-Span-1064" style="font-size: 70.7%; font-family: MathJax_Main;">4</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.282em; border-left: 0px solid; width: 0px; height: 1.432em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>≤</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>≤</mo><msup><mn>10</mn><mn>4</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-146">2 \leq x, y \leq 10^4</script>
+
+<b>Example:</b>
+Input : 
+5 9
+Output : 
+5
+
+Input : 
+4 100
+Output : 
+400</div>
+                <h5>Start Solving!</h5>
+            </div>

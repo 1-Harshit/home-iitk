@@ -1,0 +1,26 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Let us Make A Wave</span><br><small class="category">Bonus6</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">Given the array in ascending order i.e. sorted, you have to make wave pattern. In other words, arrange the elements into the sequence such that:
+a1 &gt;= a2 &lt;= a3 &gt;= a4 &lt;= a5.....
+
+<b> NOTE : </b> If there are multiple answers possible, return the one that is lexicographically smallest. 
+<b>INPUT</b>:
+An integer N representing number of array elements.
+N array elements in sorted order.
+
+<b>OUTPUT</b>:
+Output array in wave format.
+
+<b>EXAMPLE</b>:
+INPUT: 
+4
+3 5 6 7
+OUTPUT: 5 3 7 6  
+Explanation:
+5 &gt;=3 &lt;= 7 &gt;= 6
+<b>Note:</b> Few marks will be reserved for good programming practices.
+
+</div>
+                <h5>Start Solving!</h5>
+            </div>

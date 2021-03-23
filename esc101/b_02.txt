@@ -1,0 +1,20 @@
+<h3>Bonus 2 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_02_1.txt')">Mr- Big Face-</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_02_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_02_2.txt')">Game of Chars</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_02_3.txt')">OCTAL REPRESENTATION OF INTEGERS</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

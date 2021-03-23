@@ -1,0 +1,21 @@
+<h3>Bonus 3 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_03_1.txt')">Mobile Mixup</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_03_4.txt')">First Flight</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_03_2.txt')">Missing Death Eater</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_03_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_03_3.txt')">Faulty Keyboard</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

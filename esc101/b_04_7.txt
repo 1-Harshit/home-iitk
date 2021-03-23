@@ -1,0 +1,39 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Beauty of Characters</span><br><small class="category">Bonus4</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-134-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>G</mi><mi>r</mi><mi>a</mi><mi>d</mi><mi>i</mi><mi>n</mi><mi>g</mi><mtext>&amp;#xA0;</mtext><mi>s</mi><mi>c</mi><mi>h</mi><mi>e</mi><mi>m</mi><mi>e</mi><mo>:</mo></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-900" style="width: 9.467em; display: inline-block;"><span style="display: inline-block; position: relative; width: 7.86em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.313em, 1007.8em, 2.562em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-901"><span class="mi" id="MathJax-Span-902" style="font-family: MathJax_Math-italic;">G</span><span class="mi" id="MathJax-Span-903" style="font-family: MathJax_Math-italic;">r</span><span class="mi" id="MathJax-Span-904" style="font-family: MathJax_Math-italic;">a</span><span class="mi" id="MathJax-Span-905" style="font-family: MathJax_Math-italic;">d<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mi" id="MathJax-Span-906" style="font-family: MathJax_Math-italic;">i</span><span class="mi" id="MathJax-Span-907" style="font-family: MathJax_Math-italic;">n</span><span class="mi" id="MathJax-Span-908" style="font-family: MathJax_Math-italic;">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mtext" id="MathJax-Span-909" style="font-family: MathJax_Main;">&nbsp;</span><span class="mi" id="MathJax-Span-910" style="font-family: MathJax_Math-italic;">s</span><span class="mi" id="MathJax-Span-911" style="font-family: MathJax_Math-italic;">c</span><span class="mi" id="MathJax-Span-912" style="font-family: MathJax_Math-italic;">h</span><span class="mi" id="MathJax-Span-913" style="font-family: MathJax_Math-italic;">e</span><span class="mi" id="MathJax-Span-914" style="font-family: MathJax_Math-italic;">m</span><span class="mi" id="MathJax-Span-915" style="font-family: MathJax_Math-italic;">e</span><span class="mo" id="MathJax-Span-916" style="font-family: MathJax_Main; padding-left: 0.301em;">:</span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.282em; border-left: 0px solid; width: 0px; height: 1.218em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi><mi>r</mi><mi>a</mi><mi>d</mi><mi>i</mi><mi>n</mi><mi>g</mi><mtext>&nbsp;</mtext><mi>s</mi><mi>c</mi><mi>h</mi><mi>e</mi><mi>m</mi><mi>e</mi><mo>:</mo></math></span></span><script type="math/tex" id="MathJax-Element-134">Grading\ scheme:</script>
+ - 4 for correctly reading the input
+ - 7 for correctly writing the if statements
+ - 6 for correctly converting
+ - 1 for passing each test-case
+ - 3 for comments, variable names, indentation
+
+[30 points]
+------------------------------------------------------------------------------------------------------
+You should follow the following guidelines while writing your code:
+1. Proper Indentation (white spaces in your code). If you don't know about it, ask the TAs in your lab.
+2. Meaningful variable names.
+3. Adding comments for the non-trivial part of your code
+
+Failing to follow any of the above guidelines may result in a deduction of 10%  of the total marks of the question.
+-------------------------------------------------------------------------------------------------------
+
+You've just learned about capital and small case in your language class. Fascinated by their beauty, you decide to write a program to convert them into the other i.e. transform a small-case into capital-case and vice versa. You are given a character (Either small or caps), you need to print the corresponding character in the opposite case.
+
+Input: Input contains a character (Either small-case or capital-case).
+Output: The corresponding letter in the opposite case i.e. small case if original was capital-case; capital case if original was small-case.
+
+Example: 
+
+Input:
+R
+Output:
+r
+Input:
+c
+Output:
+C
+
+Note: Do not hard-code the solutions i.e. explicitly write the answer for each possible input (Doing so would lead to deduction of up to 80% marks). Arrive at a clean and elegant solution.</div>
+                <h5>Start Solving!</h5>
+            </div>

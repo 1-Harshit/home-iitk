@@ -1,0 +1,32 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">LinkedList- Grade Reversal</span><br><small class="category">Bonus10</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">A malicious script has changed the grade of many students and created a huge mess. With the semester  almost ending an immediate solution is required to fix this problem. Akash has gone through the script to find out that it contains two main items of interest, a reversal function and an integer <b>k</b>. He deduces that the script basically reverses the grades of k consecutive students. Given the linked list of the grades and the integer k help Akash restore the grade of all students.
+
+<b>INPUT</b>:
+First line contains two integers <b>n</b> and <b>k</b>, denoting the number of students and k found from the script.(n is <b>always divisible</b> by k).
+Next line contains n integers denoting the modified grades of the students.
+
+<b>OUTPUT</b>:
+A linked list containing the actual grades of the students
+
+<b>EXAMPLE</b>:
+INPUT: 6 2
+A C F B E F
+OUTPUT: C A B F F E
+Explanation: (A C),(F B) and (E F) are reversed.
+
+INPUT: 6 3
+A C F B E F
+OUTPUT: F C A F E B
+Explanation:(A C F),(B E F) are reversed.
+
+<b>Note:  Zero Marks will be awarded if
+<ul>
+<li>Main or any other function(or definition) provided in template is removed/altered
+</li><li>There is any use of arrays in the solution
+</li></ul>
+</b>
+</div>
+                <h5>Start Solving!</h5>
+            </div>

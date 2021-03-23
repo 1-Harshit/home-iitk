@@ -1,0 +1,20 @@
+<h3>Bonus 6 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_06_1.txt')">Pointer GCD</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_06_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_06_2.txt')">Let us Make A Wave</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_06_3.txt')">Gotta swap em all</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

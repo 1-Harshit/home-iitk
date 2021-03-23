@@ -1,0 +1,32 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">LinkedList- Linked Sum</span><br><small class="category">Bonus10</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">
+Given a number in the form of a linked list(each node contains a digit) you have to break it into two halves, containing floor(n/2) and ceil(n/2) digits respectively. You have to return a pointer to the linked list containing the sum of the numbers represented by the two linked lists.
+
+<b>INPUT</b>:
+First line contains an integer n.
+Second line contains n space separated digits.
+
+<b>OUTPUT</b>:
+A pointer to the sum of the linked lists(sould not contain any <b>leading zeroes</b>.<b>(The printList prints <u>all elemnts</u> in the linked list provided as an argument)</b>. )
+
+<b>EXAMPLE</b>:
+INPUT: 6
+1 2 3 4 5 6
+OUTPUT: 5-&gt;7-&gt;9
+Explanation: The two linked list will be (1-&gt;2-&gt;3) and (4-&gt;5-&gt;6). So we will do an addition 123+456 to get 579
+
+INPUT: 5
+0 1 0 1 2
+OUTPUT: 1-&gt;3
+Explanation: The two linked list will be (0-&gt;1) and (0-&gt;1-&gt;2). So we will do an addition 01+012 to get 013. Since no leading zeros is to be printed the output is 13.
+
+<b>Note:  Zero Marks will be awarded if
+<ul>
+<li>Main or any other function(or definition) provided in template is removed/altered
+</li><li>There is any use of arrays in the solution
+</li></ul>
+</b></div>
+                <h5>Start Solving!</h5>
+            </div>

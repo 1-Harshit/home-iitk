@@ -1,0 +1,23 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Bunny Paths</span><br><small class="category">Bonus7</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">There is a cute bunny which is standing at point 0, she wants to get to position <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-152-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>n</mi></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1088" style="width: 0.717em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.598em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.61em, 1000.6em, 2.384em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1089"><span class="mi" id="MathJax-Span-1090" style="font-family: MathJax_Math-italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.718em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-152">n</script>. At any given point, she can either jump 1 or 2 steps forward. Print all the possible ways to get to point <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-153-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>n</mi></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1091" style="width: 0.717em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.598em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.61em, 1000.6em, 2.384em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1092"><span class="mi" id="MathJax-Span-1093" style="font-family: MathJax_Math-italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 0.718em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-153">n</script>.
+
+Input Format:
+The input contains an integer n (?10).
+
+Output Format:
+Print all the paths arranged in increasing lexicographical order. A path is represented by all the points the bunny visits (Refer to the example for details)
+
+EXAMPLE:
+Input: 
+3
+Output:
+0 1 2 3
+0 1 3
+0 2 3
+
+Explanation: 
+There are three possible bunny paths to 3, which are given above. Note that they are printed in order of lexicographical preference.</div>
+                <h5>Start Solving!</h5>
+            </div>

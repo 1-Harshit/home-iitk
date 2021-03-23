@@ -1,0 +1,26 @@
+<h3>Bonus 4 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_1.txt')">Character Jumps</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_4.txt')">Conditionals- Expressions are too mainstream</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_7.txt')">Beauty of Characters</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_a.txt')">Solutions</button><br>
+	</div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_2.txt')">SHIFTING LETTERS</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_5.txt')">VOLUME OF FRUSTUM</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_8.txt')">String Compression</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_3.txt')">PRAC- Median score</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_6.txt')">Types-IO- Character Decrypt</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_04_9.txt')">Trignometric Expansions</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

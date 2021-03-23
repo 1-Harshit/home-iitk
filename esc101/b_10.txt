@@ -1,0 +1,22 @@
+<h3>Bonus 10 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_10_1.txt')">LinkedList- Plagiarism Detector</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_10_4.txt')">Link a List</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_10_2.txt')">LinkedList- Grade Reversal</button><br>
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_10_5.txt')">LinkedList- Land Sale</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_10_3.txt')">LinkedList- Linked Sum</button><br>
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/b_10_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

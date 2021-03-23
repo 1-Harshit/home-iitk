@@ -1,0 +1,54 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Conditionals- Expressions are too mainstream</span><br><small class="category">Bonus4</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>[40 Points]</b>
+
+<b>Grading Scheme: </b> 
+Correct Output = 4+4+4+8+8+8 = 36 Marks total.
+<u>Note:</u> Give 0 marks for visible test-cases if there is any form of hard-coding. Eg: printf("0"); 
+
+Now, marks are added/subtracted if these cases happen -
+<table class="table table-bordered">
+	<tbody><tr><th>Marks</th> <th>Component</th></tr>
+	<tr><td>+3+1</td> <td>Indented and clean code</td></tr>
+        <tr><td>-4</td> <td>Using if-else instead of switch-case (if marks &gt; 25)</td></tr>
+        <tr><td>+4</td> <td>Minor spelling error while using printf (if marks &lt; 20)</td></tr>
+        <tr><td>-4</td> <td>default-case if condition checking is not exactly same (if marks &gt; 30)</td></tr>
+</tbody></table>
+----------------------------------------------------------------------
+
+Given an arithmetic expression, translate it in British English.
+
+<b>INPUT:</b>
+One line containing the expression. Each character lies in the ASCII range [0,127].
+
+<b>OUTPUT:</b>
+One line containing the English representation of the expression.
+Only characters to be translated are <b>+, -, *, /, ^, %, =, </b>and <b>digits.</b>
+For any other character occurring in the input, print the character as it is without translation.
+
+<b>NOTES:</b>
+<ul>
+<li>Integers with more than one digit do not occur in the input provided.</li>
+<li>Use <b>small</b> letters while translating any digit/symbol. For the symbols, use following translations -
++: plus
+-: minus
+*: times
+/: over
+^: raised to
+%: modulo
+=: equals</li>
+<li><b>Control characters</b> and <b>space</b> should be ignored.</li>
+<li>Initial template already takes the input for you. Just add your code to print the desired output inside the <b>switch</b> statement.</li></ul>
+
+<b>EXAMPLE:</b>:
+<table class="table table-bordered">
+<tbody><tr><th>Input</th> <th>Output</th></tr>
+<tr><td>1+1=2</td> <td>one plus one equals two </td></tr>
+<tr><td>ESC101</td> <td>E S C one zero one </td></tr>
+<tr><td>1&lt;2</td> <td>one &lt; two </td></tr>
+</tbody></table>
+
+</div>
+                <h5>Start Solving!</h5>
+            </div>

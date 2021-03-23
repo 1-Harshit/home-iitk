@@ -1,0 +1,33 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">FileIO- Just add them up</span><br><small class="category">Bonus9</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">Your first task today is to write a program to do add two float values. Sounds simple enough? The catch is that you have to take in both numbers from the command line.
+
+<b>Hint:</b>You are allowed to use <b>atof</b> function from stdlib.h which converts a float string to float.
+
+char num[] = "3.14";
+float n = atof(num); // num = 3.14
+
+<b> NOTE :</b>  This program has a two part evaluation process. Please <b> first </b> write the program and make it pass all test cases on Prutor, hidden and visible. <b> Second </b>, download the code and modify it. Your code must be compiled and executed on your local system, in the presence of a TA. The TA will verify that your program runs the way it should, and note your Roll number as well as submission down. For Online Semester: Student have to check it by themselves for the evaluation part.
+
+<b> OFFLINE EVALUATION INSTRUCTIONS: </b> You will be required to execute all possible operations, while taking input from command line. 
+
+Command to execute : "./a.out X Y OP", where X and Y are integers and OP is the required operation.
+
+INPUT:
+Prutor : The input will contain three lines. Each line will contain an float of arbitrary length (not more than 100 digits). 
+Offline : The command line arguments will contain three floating point integers. 
+OUTPUT:
+Output one line, which should be the result of adding both the floats and print till the <b>last two decimal places</b>.
+
+EXAMPLE:
+INPUT:
+7.09
+6.01
+
+OUTPUT: 
+13.10
+
+<b>Note:</b> Few marks will be reserved for good programming practices.</div>
+                <h5>Start Solving!</h5>
+            </div>
