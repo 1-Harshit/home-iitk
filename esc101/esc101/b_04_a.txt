@@ -1,0 +1,170 @@
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include&lt;stdio.h&gt;</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>(){
+    <span style="color: #333399; font-weight: bold">char</span> c;
+    scanf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, <span style="color: #333333">&amp;</span>c);
+    <span style="color: #008800; font-weight: bold">if</span>(<span style="color: #0000DD; font-weight: bold">96</span><span style="color: #333333">&lt;</span>c<span style="color: #333333">&amp;&amp;</span>c<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">123</span>) c<span style="color: #333333">-=</span><span style="color: #0000DD; font-weight: bold">32</span>;
+    <span style="color: #008800; font-weight: bold">else</span> c<span style="color: #333333">+=</span><span style="color: #0000DD; font-weight: bold">32</span>;
+    putchar(c);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">-----------------------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+
+<span style="color: #333399; font-weight: bold">int</span> main(){
+    <span style="color: #333399; font-weight: bold">char</span> c;
+    <span style="color: #333399; font-weight: bold">int</span> i;
+    scanf(<span style="background-color: #fff0f0">&quot;%c</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">%d&quot;</span>, <span style="color: #333333">&amp;</span>c, <span style="color: #333333">&amp;</span>i);
+    c<span style="color: #333333">=</span>c<span style="color: #333333">+</span>i;
+    <span style="color: #008800; font-weight: bold">if</span>(c<span style="color: #333333">&gt;</span><span style="color: #0000DD; font-weight: bold">90</span>) c<span style="color: #333333">-=</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    <span style="color: #008800; font-weight: bold">if</span>(c<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">65</span>) c<span style="color: #333333">+=</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    putchar(c);
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">--------------------------</span>
+<span style="color: #557799">#include&lt;stdio.h&gt;</span>
+
+<span style="color: #333399; font-weight: bold">int</span> main()
+{
+    <span style="color: #333399; font-weight: bold">char</span> c<span style="color: #333333">=</span>getchar();
+    <span style="color: #008800; font-weight: bold">while</span>(c <span style="color: #333333">!=</span> EOF) {
+        <span style="color: #008800; font-weight: bold">if</span>(c<span style="color: #333333">&gt;</span><span style="color: #0000DD; font-weight: bold">32</span>){
+        <span style="color: #008800; font-weight: bold">switch</span>(c) {
+            <span style="color: #888888">// printing digits</span>
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39; &#39;</span>: <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;0&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;zero &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;1&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;one &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;2&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;two &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;3&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;three &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;4&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;four &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;5&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;five &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;6&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;six &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;7&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;seven &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;8&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;eight &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;9&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;nine &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #888888">// printing operators</span>
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;+&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;plus &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;-&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;minus &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;*&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;times &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;/&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;over &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;^&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;raised to &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;%&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;modulo &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">case</span> <span style="color: #0044DD">&#39;=&#39;</span>: printf(<span style="background-color: #fff0f0">&quot;equals &quot;</span>); <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #888888">// printing unknown symbols</span>
+            <span style="color: #008800; font-weight: bold">default</span> <span style="color: #333333">:</span> printf(<span style="background-color: #fff0f0">&quot;%c &quot;</span>, c);
+        }
+        }
+        c <span style="color: #333333">=</span> getchar();
+    }
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">-------------------------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #333399; font-weight: bold">int</span> main(){
+	<span style="color: #333399; font-weight: bold">float</span> am,ae,bm,be,cm,ce,a,b,c,m;
+	scanf(<span style="background-color: #fff0f0">&quot;%f %f %f</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>, <span style="color: #333333">&amp;</span>am,<span style="color: #333333">&amp;</span>bm,<span style="color: #333333">&amp;</span>cm);
+	scanf(<span style="background-color: #fff0f0">&quot;%f %f %f</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>, <span style="color: #333333">&amp;</span>ae,<span style="color: #333333">&amp;</span>be,<span style="color: #333333">&amp;</span>ce);
+	a<span style="color: #333333">=</span><span style="color: #6600EE; font-weight: bold">0.8</span><span style="color: #333333">*</span>am<span style="color: #333333">+</span><span style="color: #6600EE; font-weight: bold">0.6</span><span style="color: #333333">*</span>ae;
+	b<span style="color: #333333">=</span><span style="color: #6600EE; font-weight: bold">0.8</span><span style="color: #333333">*</span>bm<span style="color: #333333">+</span><span style="color: #6600EE; font-weight: bold">0.6</span><span style="color: #333333">*</span>be;
+	c<span style="color: #333333">=</span><span style="color: #6600EE; font-weight: bold">0.8</span><span style="color: #333333">*</span>cm<span style="color: #333333">+</span><span style="color: #6600EE; font-weight: bold">0.6</span><span style="color: #333333">*</span>ce;
+	<span style="color: #008800; font-weight: bold">if</span>(a<span style="color: #333333">&gt;</span>b){
+	    <span style="color: #008800; font-weight: bold">if</span>(b<span style="color: #333333">&gt;</span>c) m<span style="color: #333333">=</span>b;
+	    <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span>(a<span style="color: #333333">&gt;</span>c) m<span style="color: #333333">=</span>c;
+	    <span style="color: #008800; font-weight: bold">else</span> m<span style="color: #333333">=</span>a;
+	}<span style="color: #008800; font-weight: bold">else</span>{
+	    <span style="color: #008800; font-weight: bold">if</span>(a<span style="color: #333333">&gt;</span>c) m<span style="color: #333333">=</span>a;
+	    <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span>(b<span style="color: #333333">&gt;</span>c) m<span style="color: #333333">=</span>c;
+	    <span style="color: #008800; font-weight: bold">else</span> m<span style="color: #333333">=</span>b;
+	}
+	printf(<span style="background-color: #fff0f0">&quot;Median weighted score = %.2f&quot;</span>, m);
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">--------------------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #333399; font-weight: bold">int</span> main(<span style="color: #333399; font-weight: bold">void</span>) {
+    <span style="color: #333399; font-weight: bold">char</span> c;
+    <span style="color: #333399; font-weight: bold">int</span> n,c1;
+    scanf(<span style="background-color: #fff0f0">&quot;%c %d&quot;</span>,<span style="color: #333333">&amp;</span>c,<span style="color: #333333">&amp;</span>n);
+    n<span style="color: #333333">=</span>n<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    c1<span style="color: #333333">=</span>(<span style="color: #333399; font-weight: bold">int</span>)c;
+    c1<span style="color: #333333">=</span>c1<span style="color: #333333">+</span>n;
+    <span style="color: #008800; font-weight: bold">if</span>(c1<span style="color: #333333">&gt;</span><span style="color: #0000DD; font-weight: bold">122</span>)c1<span style="color: #333333">-=</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    <span style="color: #008800; font-weight: bold">if</span>(c1<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">97</span>)c1<span style="color: #333333">+=</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    c1<span style="color: #333333">-=</span><span style="color: #0000DD; font-weight: bold">32</span>;
+    printf(<span style="background-color: #fff0f0">&quot;%c %d&quot;</span>,c1, c1<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">65</span>);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">----------------------------</span>
+<span style="color: #557799">#include&lt;stdio.h&gt;</span>
+
+<span style="color: #333399; font-weight: bold">int</span> main(){
+    <span style="color: #333399; font-weight: bold">char</span> c;
+    <span style="color: #333399; font-weight: bold">int</span> c1,N<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> i<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;i<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">5</span>;i<span style="color: #333333">++</span>){
+        c<span style="color: #333333">=</span>getchar();
+        c1<span style="color: #333333">=</span>(<span style="color: #333399; font-weight: bold">int</span>)c;
+        <span style="color: #008800; font-weight: bold">if</span>(<span style="color: #0000DD; font-weight: bold">96</span><span style="color: #333333">&lt;</span>c1<span style="color: #333333">&amp;&amp;</span>c1<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">123</span>) c<span style="color: #333333">-=</span><span style="color: #0000DD; font-weight: bold">32</span>;
+        c1<span style="color: #333333">-=</span><span style="color: #0000DD; font-weight: bold">65</span>;
+        N<span style="color: #333333">+=</span>c1;
+    }
+    scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>c1);
+    N<span style="color: #333333">+=</span><span style="color: #0000DD; font-weight: bold">5</span><span style="color: #333333">*</span>c1;
+    N<span style="color: #333333">=</span>N<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    printf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, N<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">65</span>);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">----------------------------</span>
+<span style="color: #557799">#include&lt;stdio.h&gt;</span>
+
+<span style="color: #333399; font-weight: bold">int</span> main(){
+    <span style="color: #333399; font-weight: bold">float</span> f<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,cos<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>,sin,tan,x,xn;
+    scanf(<span style="background-color: #fff0f0">&quot;%f&quot;</span>,<span style="color: #333333">&amp;</span>x);
+    xn<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>;
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> i<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;i<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">3</span>;i<span style="color: #333333">++</span>){
+        xn<span style="color: #333333">=</span>xn<span style="color: #333333">*</span>x<span style="color: #333333">*</span>x;
+        f<span style="color: #333333">=</span>f<span style="color: #333333">*</span>(<span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">*</span>i<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">2</span>)<span style="color: #333333">*</span>(<span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">*</span>i<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span>);
+        <span style="color: #008800; font-weight: bold">if</span>(i<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">==</span><span style="color: #0000DD; font-weight: bold">0</span>) cos<span style="color: #333333">-=</span>xn<span style="color: #333333">/</span>f;
+        <span style="color: #008800; font-weight: bold">else</span> cos<span style="color: #333333">+=</span>xn<span style="color: #333333">/</span>f;
+    }
+    sin<span style="color: #333333">=</span>x;
+    xn<span style="color: #333333">=</span>x;
+    f<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>;
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> i<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;i<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">3</span>;i<span style="color: #333333">++</span>){
+        xn<span style="color: #333333">=</span>xn<span style="color: #333333">*</span>x<span style="color: #333333">*</span>x;
+        f<span style="color: #333333">=</span>f<span style="color: #333333">*</span>(<span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">*</span>i<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">2</span>)<span style="color: #333333">*</span>(<span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">*</span>i<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">3</span>);
+        <span style="color: #008800; font-weight: bold">if</span>(i<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">==</span><span style="color: #0000DD; font-weight: bold">0</span>) sin<span style="color: #333333">-=</span>xn<span style="color: #333333">/</span>f;
+        <span style="color: #008800; font-weight: bold">else</span> sin<span style="color: #333333">+=</span>xn<span style="color: #333333">/</span>f;
+    }
+    tan<span style="color: #333333">=</span>sin<span style="color: #333333">/</span>cos;
+    printf(<span style="background-color: #fff0f0">&quot;%.2f&quot;</span>,tan);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">---------------------------</span>
+<span style="color: #557799">#include&lt;stdio.h&gt;</span>
+
+<span style="color: #333399; font-weight: bold">int</span> main()
+{
+    <span style="color: #333399; font-weight: bold">char</span> c[<span style="color: #0000DD; font-weight: bold">5</span>];
+    <span style="color: #333399; font-weight: bold">int</span> n,c1[<span style="color: #0000DD; font-weight: bold">5</span>];
+    scanf(<span style="background-color: #fff0f0">&quot;%c %c %c %c %c %d&quot;</span>,<span style="color: #333333">&amp;</span>c[<span style="color: #0000DD; font-weight: bold">0</span>],<span style="color: #333333">&amp;</span>c[<span style="color: #0000DD; font-weight: bold">1</span>],<span style="color: #333333">&amp;</span>c[<span style="color: #0000DD; font-weight: bold">2</span>],<span style="color: #333333">&amp;</span>c[<span style="color: #0000DD; font-weight: bold">3</span>],<span style="color: #333333">&amp;</span>c[<span style="color: #0000DD; font-weight: bold">4</span>],<span style="color: #333333">&amp;</span>n);
+    n<span style="color: #333333">=</span>n<span style="color: #333333">%</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> i<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;i<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">5</span>;i<span style="color: #333333">++</span>){
+    c1[i]<span style="color: #333333">=</span>(<span style="color: #333399; font-weight: bold">int</span>)c[i];
+    c1[i]<span style="color: #333333">=</span>c1[i]<span style="color: #333333">+</span>n;
+    <span style="color: #008800; font-weight: bold">if</span>(c1[i]<span style="color: #333333">&gt;</span><span style="color: #0000DD; font-weight: bold">122</span>)c1[i]<span style="color: #333333">-=</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    <span style="color: #008800; font-weight: bold">if</span>(c1[i]<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">97</span>)c1[i]<span style="color: #333333">+=</span><span style="color: #0000DD; font-weight: bold">26</span>;
+    printf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>,c1[i]);
+    }
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">-------------------------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #557799">#define PI 3.1416</span>
+
+<span style="color: #333399; font-weight: bold">int</span> main() {
+    <span style="color: #333399; font-weight: bold">float</span> V,r,R,h;
+    scanf(<span style="background-color: #fff0f0">&quot;%f %f %f&quot;</span>,<span style="color: #333333">&amp;</span>r,<span style="color: #333333">&amp;</span>R,<span style="color: #333333">&amp;</span>h);
+    V<span style="color: #333333">=</span>PI<span style="color: #333333">*</span>h<span style="color: #333333">*</span>(R<span style="color: #333333">*</span>R<span style="color: #333333">+</span>R<span style="color: #333333">*</span>r<span style="color: #333333">+</span>r<span style="color: #333333">*</span>r)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">3</span>;
+    printf(<span style="background-color: #fff0f0">&quot;%.4f&quot;</span>,V);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>

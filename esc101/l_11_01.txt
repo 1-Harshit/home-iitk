@@ -1,0 +1,42 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Linked Lists in Life</span><br><small class="category">Practice-11</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>[38 Points]</b>
+<b>Grading Scheme</b>:
+<b>Note: 0 marks - If there is any form of hard-coding </b>
+<b> Using arrays is not allowed. Also, you have to complete and use the template functions to solve the problem. Otherwise, you will be given 0.</b>
+----------------------------------------------------------------------
+
+<table class="table table-bordered">
+        <tbody><tr><td colspan="2"><b>Test case Component</b></td></tr>
+        <tr><td>+4</td> <td> for each passed visible test case</td></tr>
+<tr><td>+5</td> <td> for each passed invisible test case</td></tr>
+</tbody></table>
+----------------------------------------------------------------------
+
+Devansh has studied linked lists and wants to apply the concepts in some real life applications instead of just linking, inserting and deleting nodes. He approaches one of the tutors, Shobhit who gives him an interesting idea. Shobhit gives him a list of students in the order they have coded on Prutor. Each student is identified with a unique id from 1 to N where N is the number of students in the course. Shobhit would reward the top C students who had recently coded on Prutor whenever he checks. Employing such a strategy would encourage students to spend more time coding on Prutor and reward the top C students. Shobhit asks Devansh to maintain a linked list of maximum size C and keep updating it whenever someone uses Prutor and the student’s id is obtained. Whenever Shobhit asks for the list, Devansh would print the contents of the linked list and give the ids of the C students(or less if less than C students have used Prutor) to Shobhit with the first student in the list having used Prutor most recently.
+
+Note - We take N = 500 in this problem, the student ids in input would be from {1,2,...., 500}
+
+<b>INPUT</b>:
+The first line contains n(number of accesses) and c(length of linked list &gt;=2)
+Next n lines contain an integer from {1,2,..., 500) representing the id of the student who accessed Prutor.
+
+<b>OUTPUT</b>:
+c or less student ids starting from most recently accessed
+
+<b>EXAMPLE</b>:
+Input :- 
+6 3
+3
+4
+1
+2
+2
+4
+Output :-
+4 2 1
+Explanation :- Student id = 4 accessed the portal most recently followed by student id = 2, followed by student id = 1
+</div>
+<h5>Start Solving!</span></h5>
+            </div>

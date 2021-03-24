@@ -1,0 +1,20 @@
+<h3>Lab 4 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_04_01.txt')">Encryption boi</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_04_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_04_02.txt')">Triangles</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_04_03.txt')">Expression Evaluator</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

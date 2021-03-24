@@ -1,0 +1,20 @@
+<h3>Lab 1 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_01_01.txt')">Fancy Printing</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_01_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_01_02.txt')">Geometry</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_01_03.txt')">Bingo</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

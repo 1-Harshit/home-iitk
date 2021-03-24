@@ -1,0 +1,20 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Pointer GCD</span><br><small class="category">Bonus6</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">In this exercise, you need to implement GCD. However, the challenge is that you are not allowed to return any values. So, the modified GCD function takes two pointers as follows:
+void gcd(int *a, int *b)
+It modifies the values such that when the function returns, a will contain the final answer. You need to use the function signature from the initial template.
+
+Input:
+2 integers
+Output:
+The gcd of the numbers
+
+Example:
+
+Input:
+10 5
+Output:
+5</div>
+                <h5>Start Solving!</h5>
+            </div>

@@ -1,0 +1,323 @@
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #557799">#include &lt;stdlib.h&gt;</span>
+
+<span style="color: #888888">// Strcture of Nodes</span>
+<span style="color: #008800; font-weight: bold">typedef</span> <span style="color: #008800; font-weight: bold">struct</span> Node
+{
+    <span style="color: #333399; font-weight: bold">int</span> x;
+    <span style="color: #008800; font-weight: bold">struct</span> Node <span style="color: #333333">*</span>next;
+} nod;
+
+<span style="color: #888888">// Fucntion to print </span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">printList</span>(nod <span style="color: #333333">*</span>a)
+{
+    nod <span style="color: #333333">*</span>ptr <span style="color: #333333">=</span> a;
+    <span style="color: #008800; font-weight: bold">while</span> (ptr <span style="color: #333333">!=</span> <span style="color: #007020">NULL</span>)
+    {
+        printf(<span style="background-color: #fff0f0">&quot;%d &quot;</span>, ptr<span style="color: #333333">-&gt;</span>x);
+        ptr <span style="color: #333333">=</span> ptr<span style="color: #333333">-&gt;</span>next;
+    }
+}
+
+<span style="color: #888888">// Create a node</span>
+nod <span style="color: #333333">*</span><span style="color: #0066BB; font-weight: bold">make_node</span>()
+{
+    nod <span style="color: #333333">*</span>new <span style="color: #333333">=</span> (nod <span style="color: #333333">*</span>)malloc(<span style="color: #008800; font-weight: bold">sizeof</span>(nod));
+    scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>new<span style="color: #333333">-&gt;</span>x);
+    new<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>;
+    <span style="color: #008800; font-weight: bold">return</span> new;
+}
+
+<span style="color: #888888">// Input all nodes</span>
+nod <span style="color: #333333">*</span><span style="color: #0066BB; font-weight: bold">input</span>()
+{
+    <span style="color: #333399; font-weight: bold">int</span> n;
+    scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>n);
+    nod <span style="color: #333333">*</span>head <span style="color: #333333">=</span> make_node();
+    nod <span style="color: #333333">*</span>curr, <span style="color: #333333">*</span>prev;
+    prev <span style="color: #333333">=</span> head;
+    <span style="color: #008800; font-weight: bold">while</span> (<span style="color: #333333">--</span>n)
+    {
+        curr <span style="color: #333333">=</span> make_node();
+        prev<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> curr;
+        prev <span style="color: #333333">=</span> curr;
+    }
+    <span style="color: #008800; font-weight: bold">return</span> head;
+}
+
+<span style="color: #888888">// Reverse the list</span>
+nod <span style="color: #333333">*</span> <span style="color: #0066BB; font-weight: bold">reverse</span>(nod <span style="color: #333333">*</span> head){
+    nod <span style="color: #333333">*</span> cur <span style="color: #333333">=</span> head, <span style="color: #333333">*</span> pre <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>, <span style="color: #333333">*</span> next <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>;
+    <span style="color: #008800; font-weight: bold">while</span>(cur<span style="color: #333333">!=</span><span style="color: #007020">NULL</span>){
+        next <span style="color: #333333">=</span> cur<span style="color: #333333">-&gt;</span>next;
+        cur<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> pre;
+        pre <span style="color: #333333">=</span> cur;
+        cur <span style="color: #333333">=</span> next;
+    }
+    <span style="color: #008800; font-weight: bold">return</span> pre;
+}
+
+<span style="color: #888888">// Driver Code</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>() {
+	
+	nod <span style="color: #333333">*</span> head <span style="color: #333333">=</span> input();
+	head <span style="color: #333333">=</span> reverse(head);
+	
+	printList(head);
+	
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">------------------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #557799">#include &lt;stdlib.h&gt;</span>
+
+<span style="color: #888888">//Struct</span>
+<span style="color: #008800; font-weight: bold">typedef</span> <span style="color: #008800; font-weight: bold">struct</span> Node {
+    <span style="color: #333399; font-weight: bold">int</span> val;
+    <span style="color: #008800; font-weight: bold">struct</span> Node<span style="color: #333333">*</span> next;
+} Node;
+
+<span style="color: #888888">//Createe node</span>
+Node<span style="color: #333333">*</span> <span style="color: #0066BB; font-weight: bold">createNode</span>(<span style="color: #333399; font-weight: bold">int</span> dt){
+    Node<span style="color: #333333">*</span> n<span style="color: #333333">=</span>(Node<span style="color: #333333">*</span>)malloc(<span style="color: #008800; font-weight: bold">sizeof</span>(Node));
+    n<span style="color: #333333">-&gt;</span>val<span style="color: #333333">=</span>dt;
+    n<span style="color: #333333">-&gt;</span>next<span style="color: #333333">=</span><span style="color: #007020">NULL</span>;
+    <span style="color: #008800; font-weight: bold">return</span> n;
+}
+
+<span style="color: #888888">//Input</span>
+Node<span style="color: #333333">*</span> <span style="color: #0066BB; font-weight: bold">input</span>(<span style="color: #333399; font-weight: bold">int</span> N){
+    Node <span style="color: #333333">*</span>head<span style="color: #333333">=</span><span style="color: #007020">NULL</span>,<span style="color: #333333">*</span>tail<span style="color: #333333">=</span><span style="color: #007020">NULL</span>,<span style="color: #333333">*</span>pt;
+    <span style="color: #333399; font-weight: bold">int</span> num;
+    <span style="color: #008800; font-weight: bold">while</span>(N<span style="color: #333333">--</span>){
+        scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>num);            
+        pt<span style="color: #333333">=</span>createNode(num);
+        <span style="color: #008800; font-weight: bold">if</span>(head<span style="color: #333333">==</span><span style="color: #007020">NULL</span>)
+            head<span style="color: #333333">=</span>tail<span style="color: #333333">=</span>pt;
+        <span style="color: #008800; font-weight: bold">else</span>{
+            tail<span style="color: #333333">-&gt;</span>next<span style="color: #333333">=</span>pt;
+            tail<span style="color: #333333">=</span>pt;
+        }
+    }
+    <span style="color: #008800; font-weight: bold">if</span> (tail) tail<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> head;
+    <span style="color: #008800; font-weight: bold">return</span> head;
+}
+
+<span style="color: #888888">//Output</span>
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">output</span>(Node<span style="color: #333333">*</span> head){
+    Node<span style="color: #333333">*</span> ptr<span style="color: #333333">=</span>head; <span style="color: #333399; font-weight: bold">int</span> N <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    <span style="color: #008800; font-weight: bold">while</span>(ptr<span style="color: #333333">!=</span>head <span style="color: #333333">||</span> <span style="color: #333333">!</span>N){
+        N<span style="color: #333333">++</span>;
+        <span style="color: #008800; font-weight: bold">if</span> (N <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">1002</span> <span style="color: #333333">||</span> <span style="color: #333333">!</span>ptr) <span style="color: #008800; font-weight: bold">break</span>;
+        printf(<span style="background-color: #fff0f0">&quot;%d &quot;</span>,ptr<span style="color: #333333">-&gt;</span>val);
+        ptr<span style="color: #333333">=</span>ptr<span style="color: #333333">-&gt;</span>next;
+    }
+    <span style="color: #008800; font-weight: bold">if</span> (N <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">1002</span> <span style="color: #333333">||</span> <span style="color: #333333">!</span>ptr) printf(<span style="background-color: #fff0f0">&quot;The returned linkedlist is not a valid cyclic linked list!&quot;</span>);
+    printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+}
+
+<span style="color: #888888">//The code i made</span>
+Node<span style="color: #333333">*</span> <span style="color: #0066BB; font-weight: bold">insertInSortedCyclicList</span>(Node<span style="color: #333333">*</span> start, <span style="color: #333399; font-weight: bold">int</span> x) {
+    <span style="color: #888888">//Node of x</span>
+    Node <span style="color: #333333">*</span>ins <span style="color: #333333">=</span> createNode(x);
+    
+    <span style="color: #888888">//if empty append</span>
+    <span style="color: #008800; font-weight: bold">if</span>(start <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>){
+        ins<span style="color: #333333">-&gt;</span>next<span style="color: #333333">=</span>ins;
+        <span style="color: #008800; font-weight: bold">return</span> ins;
+    }
+    
+    <span style="color: #888888">//if one element append</span>
+    Node<span style="color: #333333">*</span> pre <span style="color: #333333">=</span> start, <span style="color: #333333">*</span>cur <span style="color: #333333">=</span> start<span style="color: #333333">-&gt;</span>next;
+    <span style="color: #008800; font-weight: bold">if</span>(pre<span style="color: #333333">==</span>cur){
+        start<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> ins;
+        ins<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> start;
+        <span style="color: #008800; font-weight: bold">return</span> start;
+    }
+    <span style="color: #333399; font-weight: bold">int</span> n<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>,t<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;
+    <span style="color: #008800; font-weight: bold">while</span>(pre<span style="color: #333333">!=</span>start <span style="color: #333333">||</span> <span style="color: #333333">!</span>n)
+    {
+        n<span style="color: #333333">++</span>;
+        <span style="color: #008800; font-weight: bold">if</span>(pre<span style="color: #333333">-&gt;</span>val <span style="color: #333333">&gt;</span> cur<span style="color: #333333">-&gt;</span>val){
+            <span style="color: #008800; font-weight: bold">if</span>(x <span style="color: #333333">&gt;=</span> pre<span style="color: #333333">-&gt;</span>val <span style="color: #333333">||</span> x <span style="color: #333333">&lt;=</span> cur<span style="color: #333333">-&gt;</span>val)
+            {
+                pre<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> ins;
+                ins<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> cur;
+                <span style="color: #008800; font-weight: bold">return</span> start;
+            }
+        }<span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span>(pre<span style="color: #333333">-&gt;</span>val <span style="color: #333333">!=</span> cur<span style="color: #333333">-&gt;</span>val <span style="color: #333333">&amp;&amp;</span> pre<span style="color: #333333">-&gt;</span>val <span style="color: #333333">&lt;=</span> x <span style="color: #333333">&amp;&amp;</span> x <span style="color: #333333">&lt;=</span> cur<span style="color: #333333">-&gt;</span>val)
+        {
+            pre<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> ins;
+            ins<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> cur;
+            <span style="color: #008800; font-weight: bold">return</span> start;
+        }<span style="color: #008800; font-weight: bold">else</span>{
+            t<span style="color: #333333">++</span>;
+        }
+        pre <span style="color: #333333">=</span> cur;
+        cur <span style="color: #333333">=</span> cur<span style="color: #333333">-&gt;</span>next;
+    }
+    <span style="color: #888888">//If all inpur are same and not same as</span>
+    cur <span style="color: #333333">=</span> start<span style="color: #333333">-&gt;</span>next;
+    <span style="color: #008800; font-weight: bold">if</span>(t<span style="color: #333333">==</span>n){
+        start<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> ins;
+        ins<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> cur;
+        <span style="color: #008800; font-weight: bold">return</span> start;
+    }
+}
+
+<span style="color: #888888">//Driver code</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>() {
+    <span style="color: #333399; font-weight: bold">int</span> N; scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>N);
+    Node<span style="color: #333333">*</span> start <span style="color: #333333">=</span> input(N);
+    <span style="color: #333399; font-weight: bold">int</span> x; scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>,<span style="color: #333333">&amp;</span>x);
+    start <span style="color: #333333">=</span> insertInSortedCyclicList(start, x);
+    output(start);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">---------------------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #557799">#include &lt;stdlib.h&gt;</span>
+<span style="color: #008800; font-weight: bold">typedef</span> <span style="color: #008800; font-weight: bold">struct</span> node
+{
+    <span style="color: #333399; font-weight: bold">int</span> data;
+    <span style="color: #008800; font-weight: bold">struct</span> node <span style="color: #333333">*</span>next;
+    <span style="color: #008800; font-weight: bold">struct</span> node <span style="color: #333333">*</span>prev;
+} NODE;
+
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+    <span style="color: #333399; font-weight: bold">int</span> flag <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>, asign <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>, bsign <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+    NODE <span style="color: #333333">*</span>a, <span style="color: #333333">*</span>b, <span style="color: #333333">*</span>heada, <span style="color: #333333">*</span>headb, <span style="color: #333333">*</span>temp;
+    a <span style="color: #333333">=</span> (NODE <span style="color: #333333">*</span>)malloc(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">*</span> <span style="color: #008800; font-weight: bold">sizeof</span>(NODE));
+    b <span style="color: #333333">=</span> (NODE <span style="color: #333333">*</span>)malloc(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">*</span> <span style="color: #008800; font-weight: bold">sizeof</span>(NODE));
+    heada <span style="color: #333333">=</span> a;
+    headb <span style="color: #333333">=</span> b;
+    <span style="color: #333399; font-weight: bold">char</span> ch;
+    scanf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, <span style="color: #333333">&amp;</span>ch);
+    <span style="color: #008800; font-weight: bold">while</span> (ch <span style="color: #333333">!=</span> <span style="color: #0044DD">&#39;\n&#39;</span>) <span style="color: #888888">//when c = newline, first number ends and second ends</span>
+    {
+        <span style="color: #008800; font-weight: bold">if</span> (ch <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;-&#39;</span>) <span style="color: #888888">//if number is negative</span>
+        {
+            asign <span style="color: #333333">=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>;
+            scanf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, <span style="color: #333333">&amp;</span>ch);
+            <span style="color: #008800; font-weight: bold">continue</span>;
+        }
+        <span style="color: #008800; font-weight: bold">if</span> (ch <span style="color: #333333">!=</span> <span style="color: #0044DD">&#39;0&#39;</span>)
+            flag <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+        <span style="color: #008800; font-weight: bold">if</span> (flag <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+        {
+            a<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">int</span>)(ch <span style="color: #333333">-</span> <span style="color: #0044DD">&#39;0&#39;</span>);
+            a<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> (NODE <span style="color: #333333">*</span>)malloc(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">*</span> <span style="color: #008800; font-weight: bold">sizeof</span>(NODE));
+            temp <span style="color: #333333">=</span> a;
+            a <span style="color: #333333">=</span> a<span style="color: #333333">-&gt;</span>next;
+            a<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">=</span> temp;
+        }
+        scanf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, <span style="color: #333333">&amp;</span>ch);
+    }
+    <span style="color: #008800; font-weight: bold">if</span> (flag <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+    {
+        printf(<span style="background-color: #fff0f0">&quot;None&quot;</span>);
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    }
+    a <span style="color: #333333">=</span> a<span style="color: #333333">-&gt;</span>prev;
+    a<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>;
+    flag <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    scanf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, <span style="color: #333333">&amp;</span>ch);
+    <span style="color: #008800; font-weight: bold">while</span> (ch <span style="color: #333333">!=</span> <span style="color: #0044DD">&#39;\n&#39;</span>)
+    {
+        <span style="color: #008800; font-weight: bold">if</span> (ch <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;-&#39;</span>) <span style="color: #888888">//if number is negative</span>
+        {
+            bsign <span style="color: #333333">=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>;
+            scanf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, <span style="color: #333333">&amp;</span>ch);
+            <span style="color: #008800; font-weight: bold">continue</span>;
+        }
+        <span style="color: #008800; font-weight: bold">if</span> (ch <span style="color: #333333">!=</span> <span style="color: #0044DD">&#39;0&#39;</span>) <span style="color: #888888">//leading zeroes are ignored</span>
+            flag <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+        <span style="color: #008800; font-weight: bold">if</span> (flag <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+        {
+            b<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">int</span>)(ch <span style="color: #333333">-</span> <span style="color: #0044DD">&#39;0&#39;</span>);
+            b<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> (NODE <span style="color: #333333">*</span>)malloc(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">*</span> <span style="color: #008800; font-weight: bold">sizeof</span>(NODE));
+            temp <span style="color: #333333">=</span> b;
+            b <span style="color: #333333">=</span> b<span style="color: #333333">-&gt;</span>next;
+            b<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">=</span> temp;
+        }
+        scanf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, <span style="color: #333333">&amp;</span>ch);
+    }
+    <span style="color: #008800; font-weight: bold">if</span> (flag <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>) <span style="color: #888888">//we never encountered any non-zero digit</span>
+    {
+        printf(<span style="background-color: #fff0f0">&quot;None&quot;</span>); <span style="color: #888888">//so its 0</span>
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    }
+    b <span style="color: #333333">=</span> b<span style="color: #333333">-&gt;</span>prev;
+    b<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>;
+    <span style="color: #333399; font-weight: bold">int</span> carry <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    NODE <span style="color: #333333">*</span>c, <span style="color: #333333">*</span>ctail, <span style="color: #333333">*</span>atail, <span style="color: #333333">*</span>btail, <span style="color: #333333">*</span>ccurr;
+    atail <span style="color: #333333">=</span> a;
+    btail <span style="color: #333333">=</span> b;
+    c <span style="color: #333333">=</span> (NODE <span style="color: #333333">*</span>)malloc(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">*</span> <span style="color: #008800; font-weight: bold">sizeof</span>(NODE)); <span style="color: #888888">//each node of c represents a digit</span>
+    ctail <span style="color: #333333">=</span> c;
+    ccurr <span style="color: #333333">=</span> c;
+    c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    <span style="color: #008800; font-weight: bold">while</span> (b)
+    {
+        <span style="color: #008800; font-weight: bold">while</span> (a)
+        {
+            c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">+</span> (a<span style="color: #333333">-&gt;</span>data <span style="color: #333333">*</span> b<span style="color: #333333">-&gt;</span>data); <span style="color: #888888">//mathematics ultra pro max</span>
+            <span style="color: #008800; font-weight: bold">if</span> (c<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>)
+            {
+                c<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">=</span> (NODE <span style="color: #333333">*</span>)malloc(<span style="color: #008800; font-weight: bold">sizeof</span>(NODE));
+                c<span style="color: #333333">-&gt;</span>prev<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+                c<span style="color: #333333">-&gt;</span>prev<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> c;
+            }
+            c <span style="color: #333333">=</span> c<span style="color: #333333">-&gt;</span>prev; <span style="color: #888888">//move to left digit</span>
+            <span style="color: #008800; font-weight: bold">if</span> (a<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>)
+                <span style="color: #008800; font-weight: bold">break</span>;
+            <span style="color: #008800; font-weight: bold">else</span>
+                a <span style="color: #333333">=</span> a<span style="color: #333333">-&gt;</span>prev; <span style="color: #888888">//each element of b multiplied by each element of b</span>
+        }
+        a <span style="color: #333333">=</span> atail;
+        <span style="color: #008800; font-weight: bold">if</span> (ccurr<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>)
+        {
+            ccurr<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">=</span> (NODE <span style="color: #333333">*</span>)malloc(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">*</span> <span style="color: #008800; font-weight: bold">sizeof</span>(NODE));
+            ccurr<span style="color: #333333">-&gt;</span>prev<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+            ccurr<span style="color: #333333">-&gt;</span>prev<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> ccurr;
+        }
+        ccurr <span style="color: #333333">=</span> ccurr<span style="color: #333333">-&gt;</span>prev; <span style="color: #888888">//that x we put in multiplication, so we don&#39;t add in that digit</span>
+        c <span style="color: #333333">=</span> ccurr;
+        <span style="color: #008800; font-weight: bold">if</span> (b<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>)
+            <span style="color: #008800; font-weight: bold">break</span>;
+        <span style="color: #008800; font-weight: bold">else</span>
+            b <span style="color: #333333">=</span> b<span style="color: #333333">-&gt;</span>prev;
+    }
+    c <span style="color: #333333">=</span> ctail;
+    <span style="color: #008800; font-weight: bold">while</span> (<span style="color: #0000DD; font-weight: bold">1</span>)
+    {
+        carry <span style="color: #333333">=</span> c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">10</span>; <span style="color: #888888">//taking care of carry</span>
+        c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">10</span>;
+        <span style="color: #008800; font-weight: bold">if</span> (c<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">==</span> <span style="color: #007020">NULL</span> <span style="color: #333333">&amp;&amp;</span> carry <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+            <span style="color: #008800; font-weight: bold">break</span>;
+        <span style="color: #008800; font-weight: bold">if</span> (c<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">==</span> <span style="color: #007020">NULL</span>)
+        {
+            c<span style="color: #333333">-&gt;</span>prev <span style="color: #333333">=</span> (NODE <span style="color: #333333">*</span>)malloc(<span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">*</span> <span style="color: #008800; font-weight: bold">sizeof</span>(NODE));
+            c<span style="color: #333333">-&gt;</span>prev<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+            c<span style="color: #333333">-&gt;</span>prev<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> c;
+        }
+        c <span style="color: #333333">=</span> c<span style="color: #333333">-&gt;</span>prev;
+        c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">=</span> c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">+</span> carry;
+        carry <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    }
+
+    <span style="color: #008800; font-weight: bold">while</span> (c<span style="color: #333333">-&gt;</span>data <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+        c <span style="color: #333333">=</span> c<span style="color: #333333">-&gt;</span>next;
+    <span style="color: #008800; font-weight: bold">if</span> (asign <span style="color: #333333">*</span> bsign <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">0</span>) <span style="color: #888888">//if answer is negative</span>
+        printf(<span style="background-color: #fff0f0">&quot;-&quot;</span>);
+    printf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, c<span style="color: #333333">-&gt;</span>data); <span style="color: #888888">//nothing to see here, just some printing</span>
+    <span style="color: #008800; font-weight: bold">while</span> (c<span style="color: #333333">-&gt;</span>next)
+    {
+        c <span style="color: #333333">=</span> c<span style="color: #333333">-&gt;</span>next;
+        printf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, c<span style="color: #333333">-&gt;</span>data);
+    }
+
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>

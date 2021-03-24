@@ -1,0 +1,32 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">LinkedList- Plagiarism Detector</span><br><small class="category">Bonus10</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>Use of linked list is mandatory for any form of storage and updation</b>
+Rohit has designed a plagiarism detector that assigns unique integers to distinct submissions. If two students have the same submission, a same integer is assigned. The plagiarism detector returns a linked list of integers with all matching submissions clubbed together.  Rohit only wants to grade unique submissions and award zero to any copied submission. Given a linked list of integers assigned to submissions, help Rohit find out all unique submissions(integers).
+<b>INPUT</b>:
+First line contains <b>n</b> denoting the number of students.
+Second lines contains n integers denoting the numbers assigned to each submission. <b>(All similar submissions appear together)</b>
+
+<b>OUTPUT</b>:
+A list of unique submissions.
+
+<b>EXAMPLE</b>:
+INPUT: 6
+1 2 3 3 4 4
+OUTPUT: 1-&gt;2
+Explanation: Since 3 and 4 are repeated, those submissions will not be graded. Only unique submissions 1 and 2 are to be graded.
+
+INPUT: 6
+1 3 3 3 3 3
+OUTPUT: 1
+Explanation: Since 3 is repeated, those submissions will not be graded. Only unique submission 1 is to be graded. 
+
+<b>Note:  Zero Marks will be awarded if
+<ul>
+<li>Main or any other function(or definition) provided in template is removed/altered
+</li><li>There is any use of arrays in the solution
+</li></ul>
+</b>
+</div>
+                <h5>Start Solving!</h5>
+            </div>

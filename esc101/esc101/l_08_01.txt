@@ -1,0 +1,34 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Buzzinga</span><br><small class="category">Practice-8</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><h1>Buzzinga</h1>
+Dr. Sheldon, a renowned theoretical physicist, routinely engages in the "Science v/s Engineering" debate with his engineer friend Howard. Howard wants to end this tussle forever. He presents a simple problem to Sheldon. The problem is as follows,
+
+"There is a maze M with m rows and n columns. There are hurdles present on some of the cells due to which Sheldon can't step on them. Sheldon starts on the (0,0) (top left) cell and has to reach (m-1,n-1) (bottom right) cell by taking steps only in the downward and right directions. He has to determine the number of ways to reach the final cell in order to win the debate."  
+
+Howard knows that Sheldon is a really smart guy. Thus, he may make the maze quite big. Hearing the problem statement Sheldon takes his pen and paper to arrive at a theoretical result. Dr Leonard, a friend of Sheldon, an experimental physicist, wants him to win. He plans to write a computer program to help Sheldon that can report the minimum possible number of steps to reach the final cell. Unfortunately, he doesn't remember programming and approaches you for help.
+
+<b>Input -</b>
+Two numbers m and n, followed by the matrix with 1 if the hurdle is present, 0 otherwise. The left top and bottom right cells are guaranteed to be 0.
+
+<b>Output-</b>
+The number of ways to reach the final cell from the initial cell using only right and down steps. Since the number can be very large output the answer modulo 10^9+7
+
+Input Constraints-
+1&lt;=n,m&lt;=300
+
+<b>Sample Input -</b>
+4 4
+0 0 0 0
+0 1 0 0
+1 0 0 0
+0 0 0 0
+
+<b>Sample Output -</b>
+4
+
+Explanation using Sheldon's pen and paper method-
+
+The number of ways to reach from (0,2) to (3,3) cell is (3-0 + 3-2)C(3-0) = 4 (Remember the calculations from JEE days?)</div>
+ <h5>Start Solving!</span></h5>
+            </div>

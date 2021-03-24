@@ -1,0 +1,20 @@
+<h3>Lab 8 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_08_01.txt')">Buzzinga</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_08_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_08_02.txt')">Battle of A-s</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_08_03.txt')">Roll me One</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

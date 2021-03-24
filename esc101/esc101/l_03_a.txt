@@ -1,0 +1,92 @@
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+    <span style="color: #333399; font-weight: bold">int</span> n, a, f <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>, t <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; <span style="color: #888888">//var declarition</span>
+    scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>n);
+    <span style="color: #888888">//row</span>
+    <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; (i <span style="color: #333333">&lt;</span> n) <span style="color: #333333">&amp;&amp;</span> (f <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>); i<span style="color: #333333">++</span>)
+    {
+        <span style="color: #888888">//col</span>
+        <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; (j <span style="color: #333333">&lt;</span> n) <span style="color: #333333">&amp;&amp;</span> (f <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>); j<span style="color: #333333">++</span>)
+        {
+            scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>a);
+            <span style="color: #888888">//diag element</span>
+            <span style="color: #008800; font-weight: bold">if</span> (i <span style="color: #333333">==</span> j)
+                t <span style="color: #333333">+=</span> a;
+            <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (a <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                f <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>; <span style="color: #888888">//diag matrix</span>
+        }
+    }
+    <span style="color: #008800; font-weight: bold">if</span> (f <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+        t <span style="color: #333333">=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>;
+    printf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, t);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">--------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+            <span style="color: #333399; font-weight: bold">int</span>
+            main()
+{
+    <span style="color: #333399; font-weight: bold">int</span> n;
+    scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>n);
+    <span style="color: #888888">//Infinite Loop</span>
+    <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>, j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>;; i<span style="color: #333333">++</span>)
+    {
+        <span style="color: #888888">//Last Row end loop</span>
+        <span style="color: #008800; font-weight: bold">if</span> (j <span style="color: #333333">==</span> n <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+            <span style="color: #008800; font-weight: bold">break</span>;
+        printf(<span style="background-color: #fff0f0">&quot;* &quot;</span>);
+        <span style="color: #888888">//Last * or row, make restart i and increment j</span>
+        <span style="color: #008800; font-weight: bold">if</span> (i <span style="color: #333333">==</span> j)
+        {
+            printf(<span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+            i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+            j<span style="color: #333333">++</span>;
+            <span style="color: #008800; font-weight: bold">continue</span>;
+        }
+    }
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">-------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+            <span style="color: #333399; font-weight: bold">int</span>
+            main()
+{
+    <span style="color: #333399; font-weight: bold">int</span> n, m, s <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>, a, jo <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>, g <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    scanf(<span style="background-color: #fff0f0">&quot;%d %d&quot;</span>, <span style="color: #333333">&amp;</span>n, <span style="color: #333333">&amp;</span>m);
+    <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> n; i<span style="color: #333333">++</span>)
+    {
+        <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>, f <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> m; j<span style="color: #333333">++</span>)
+        {
+            scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>a);
+            <span style="color: #008800; font-weight: bold">if</span> ((j <span style="color: #333333">&gt;=</span> jo) <span style="color: #333333">&amp;&amp;</span> (f <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>))
+            {
+                <span style="color: #008800; font-weight: bold">if</span> (a <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                    jo <span style="color: #333333">=</span> j;
+                <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> (j <span style="color: #333333">==</span> jo)
+                {
+                    g <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2</span>;
+                    f <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2</span>;
+                }
+                <span style="color: #008800; font-weight: bold">else</span>
+                    f <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+            }
+            <span style="color: #008800; font-weight: bold">if</span> ((j <span style="color: #333333">==</span> jo <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>) <span style="color: #333333">&amp;&amp;</span> (a <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>))
+            {
+                f <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+                jo <span style="color: #333333">=</span> j;
+                g <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+            }
+
+            <span style="color: #008800; font-weight: bold">if</span> (j <span style="color: #333333">==</span> m <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+                s <span style="color: #333333">+=</span> jo <span style="color: #333333">*</span> jo <span style="color: #333333">*</span> jo;
+        }
+    }
+    <span style="color: #008800; font-weight: bold">if</span> (g <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">2</span>)
+        printf(<span style="background-color: #fff0f0">&quot;WRONG MAZE&quot;</span>);
+    <span style="color: #008800; font-weight: bold">else</span>
+        <span style="color: #0066BB; font-weight: bold">printf</span>(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, s);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">----------</span>
+</pre></div>

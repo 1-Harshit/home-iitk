@@ -1,0 +1,29 @@
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include&lt;stdio.h&gt;</span>
+
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>(){
+<span style="color: #888888">// enter solution code here</span>
+    <span style="color: #333399; font-weight: bold">int</span> a,b,c,d,e,f,g,h,i,t,dt;
+    scanf(<span style="background-color: #fff0f0">&quot;%d %d %d %d %d %d %d %d %d&quot;</span>, <span style="color: #333333">&amp;</span>a, <span style="color: #333333">&amp;</span>b, <span style="color: #333333">&amp;</span>c, <span style="color: #333333">&amp;</span>d, <span style="color: #333333">&amp;</span>e, <span style="color: #333333">&amp;</span>f, <span style="color: #333333">&amp;</span>g, <span style="color: #333333">&amp;</span>h, <span style="color: #333333">&amp;</span>i);
+    t<span style="color: #333333">=</span>a<span style="color: #333333">+</span>e<span style="color: #333333">+</span>i;
+    dt<span style="color: #333333">=</span>a<span style="color: #333333">*</span>(e<span style="color: #333333">*</span>i<span style="color: #333333">-</span>f<span style="color: #333333">*</span>h)<span style="color: #333333">-</span>b<span style="color: #333333">*</span>(d<span style="color: #333333">*</span>i<span style="color: #333333">-</span>f<span style="color: #333333">*</span>g)<span style="color: #333333">+</span>c<span style="color: #333333">*</span>(d<span style="color: #333333">*</span>h<span style="color: #333333">-</span>e<span style="color: #333333">*</span>g);
+    printf(<span style="background-color: #fff0f0">&quot;Trace : %d</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Determinant : %d&quot;</span>, t, dt);
+	<span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">----------------</span>
+<span style="color: #557799">#include&lt;stdio.h&gt;</span>
+<span style="color: #333399; font-weight: bold">int</span> main(){
+    <span style="color: #333399; font-weight: bold">double</span> a1,b1,c1,a2,b2,c2,x,y;
+    scanf(<span style="background-color: #fff0f0">&quot;%lf %lf %lf %lf %lf %lf&quot;</span>, <span style="color: #333333">&amp;</span>a1, <span style="color: #333333">&amp;</span>b1, <span style="color: #333333">&amp;</span>c1, <span style="color: #333333">&amp;</span>a2, <span style="color: #333333">&amp;</span>b2, <span style="color: #333333">&amp;</span>c2);
+    x<span style="color: #333333">=</span>(b1<span style="color: #333333">*</span>c2<span style="color: #333333">-</span>b2<span style="color: #333333">*</span>c1)<span style="color: #333333">/</span>(b2<span style="color: #333333">*</span>a1<span style="color: #333333">-</span>b1<span style="color: #333333">*</span>a2);
+    y<span style="color: #333333">=</span>(a1<span style="color: #333333">*</span>c2<span style="color: #333333">-</span>a2<span style="color: #333333">*</span>c1)<span style="color: #333333">/</span>(a2<span style="color: #333333">*</span>b1<span style="color: #333333">-</span>a1<span style="color: #333333">*</span>b2);
+    printf(<span style="background-color: #fff0f0">&quot;Point of intersection is : (%.2lf,%.2lf)&quot;</span>, x, y);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">---------------</span>
+<span style="color: #557799">#include&lt;stdio.h&gt;</span>
+<span style="color: #333399; font-weight: bold">int</span> main(){
+    printf(<span style="background-color: #fff0f0">&quot;Namaste _\/</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\\</span><span style="background-color: #fff0f0">_</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>);
+    printf(<span style="background-color: #fff0f0">&quot;Let us begin Coding in </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\&quot;</span><span style="background-color: #fff0f0">C</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\&quot;</span><span style="background-color: #fff0f0"> !&quot;</span>);
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></div>

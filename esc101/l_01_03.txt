@@ -1,0 +1,25 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Bingo</span><br><small class="category">Practice-1</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">Sagnik needs your help to classify triangles as valid or invalid. You are given three integers, <i>a</i>,<i> b</i> and <i>c</i>. You need to tell if a valid triangle can be formed with these three integers as its sides. If a valid triangle can be formed with these three sides, you need to output the three sides in descending order, otherwise, you need to print <i>Invalid</i>. 
+
+<b>Rules for a triangle to be valid:</b><ul><li>Each side of the triangle should be greater than 0.</li><li>Sum of any two sides of the triangle should be greater than the third side.</li></ul>
+<b>Input:</b> 
+Input contains 3 integers <i>a</i>,<i> b</i> and <i>c</i> .
+<b>Output:</b> 
+If the triangle is valid, print the sides of the triangle in descending order.
+If the triangle is invalid, print “Invalid”.  
+
+<b>Sample Input 1:</b>
+3 4 4
+<b>Output:</b>
+4 4 3
+
+<b>Sample Input 2:</b>
+1 3 4
+<b>Output:</b>
+Invalid
+
+</div>
+<h5>Start Solving!</span></h5>
+</div>

@@ -1,0 +1,24 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Merge the Arrays</span><br><small class="category">Practice-6</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><h1 id="intersection-point">Merge the arrays</h1>
+<p>You are given two sorted arrays. Merge the two arrays to create another sorted array such that there are no repeated elements in it.</p>
+<h2 id="input">Input</h2>
+<p>The first line of input will contain 2 integers, <code>m</code> and <code>n</code>. <code>m</code> is the size of first array, and <code>n</code> is the size of second array.</p>
+<p>The next two lines contain <code>m</code> and <code>n</code> integers respectively.</p>
+
+<h2 id="output">Output</h2>
+<p>The output will consist of two lines.</p>
+<p>First line should contain the length of merged array.</p>
+<p>Second line contains the elements of merged array.</p>
+<h2 id="examples">Example</h2>
+<h4 id="input-">Input:</h4>
+<pre><code><span class="hljs-symbol">4 5<br>1 3 3 6<br>2 4 5 6 8</span>
+</code></pre>
+<h4 id="output-">Output:</h4>
+<pre><code>7<br>1 2 3 4 5 6 8
+</code></pre>
+<b>Note: You are not allowed to use the [ ] operator. Also, do not change the function signature of the "merge" function. Doing either of these will fetch 0 marks.</b>
+</div>
+<h5>Start Solving!</span></h5>
+            </div>

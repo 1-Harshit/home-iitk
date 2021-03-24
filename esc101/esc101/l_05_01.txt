@@ -1,0 +1,38 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title"></span><br><small class="category">Practice-5</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>Grading Scheme: </b> 
+Correct Output = 4+4+4+6+6+6 = 30 Marks total. 4 for each visible test case and 6 for each hidden test case.
+<u>Note:</u> 0 marks would be given for visible test-cases if there is any form of hard-coding.  
+----------------------------------------------------------------------
+<b>Note:</b> 
+<ul><li>This is a <u>functions</u> lab and you are expected to use functions (define and call) in all the questions</li>
+<li>You need to implement the function <b>is_valid</b> which returns 1 is the date is valid and returns 0 if it is invalid, and call this function from your main function. Failure to implement this function will result in <b>zero</b> marks.</li>
+<li>You are encouraged to create other functions as well to help you in the main task.</li>
+<li>Usage of arrays is forbidden in this question (only concepts until loops/functions are allowed)</li></ul>
+
+Given a date, determine if it is valid or not.
+
+<b>NOTE:</b> Leap Years should be taken into account. A year is a leap year if
+<ul>
+<li>it is divisible by 400</li>
+<li>Or it is divisible by 4 but not divisible by 100</li>
+</ul>
+
+<b>INPUT</b>:
+The input contains a single line with three space-separated integers corresponding to day, month and year respectively.
+
+<b>OUTPUT</b>:
+Output "Valid" if the date is valid, "Not Valid" otherwise.
+
+<b>EXAMPLE</b>:
+INPUT: 
+30 2 2018
+OUTPUT: 
+Not Valid
+Explanation:
+The month of February does not have 30th day.
+<b>Note:</b> Few marks will be reserved for good programming practices.
+</div>
+<h5>Start Solving!</span></h5> 
+            </div>

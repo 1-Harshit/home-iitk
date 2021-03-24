@@ -1,0 +1,61 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Hail Pikachu</span><br><small class="category">Practice-11</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>Grading Scheme</b>:
+<b>Note: 0 marks - If there is any form of hard-coding </b>
+
+<table class="table table-bordered">
+	<tbody><tr><th>Marks</th> <th>Component</th></tr>
+        <tr><td colspan="2"><b>Test case Component</b></td></tr>
+        <tr><td>+5</td> <td>for each passed visible testcases</td></tr>
+<tr><td>+6</td> <td>for each passed invisible testcases</td></tr>
+</tbody></table>
+Let's go back to World War II times. While Germany used the Enigma Machine to send secret codes, our Ninja City used a specific logic to send secret codes that their ninjas were required to decipher. The ninjas are known to be experts in deciphering secret codes, however, poor Satoshi couldn't. But Satoshi is a gutsy person. He didn't want to give up. Hence, Satoshi requested only for encryption logic to his fellow ninja Brock. Brock felt pity for him and gave away the encryption logic:
+
+A string of length N is given. A number K is given that denotes the number of columns in which the text should be placed. A key X will be given whose length is equal to the number of columns and no digit in X is greater than K. Let's see an example:
+
+Input:
+Meet me at the park
+5
+23145
+
+Assume the string to be converted to all upper case, and ignore all whitespaces. So, the resultant matrix would look like this:
+0 1 2 3 4 5
+1 M E E T M
+2 E A T T H
+3 E P A R K
+
+In case any space is remaining in the matrix, fill them with special symbol '*'. Now, swap the columns as per key X:
+
+0 2 3 1 4 5
+1 E E M T M
+2 A T E T H
+3 P A E R K
+
+Now, write the encrypted string in column-wise fashion, top-to-bottom. So, the encrypted string will be:
+EAPETAMEETTRMHK
+
+Now, you need to help Satoshi decrypt this encrypted string sent by the Ninja City headquarters, along with additional information of X (key). So, your input will be:
+
+Figure out a way to construct the original message "Meet me at the park" from the given encrypted string and key.
+
+Checks to perform:
+1. Matrix is fully filled
+2. No digit in key is greater than length of key
+
+
+<b>INPUT</b>:
+Encrypted Message (<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-186-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>N</mi><mo>&amp;#x2264;</mo><mn>100</mn></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1278" style="width: 4.527em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.753em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.372em, 1003.69em, 2.503em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1279"><span class="mi" id="MathJax-Span-1280" style="font-family: MathJax_Math-italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.063em;"></span></span><span class="mo" id="MathJax-Span-1281" style="font-family: MathJax_Main; padding-left: 0.301em;">≤</span><span class="mn" id="MathJax-Span-1282" style="font-family: MathJax_Main; padding-left: 0.301em;">100</span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.211em; border-left: 0px solid; width: 0px; height: 1.146em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>≤</mo><mn>100</mn></math></span></span><script type="math/tex" id="MathJax-Element-186">N \leq 100</script>)
+Encryption Key ( <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-187-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo stretchy=&quot;false&quot;>|</mo></mrow><mi>X</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo stretchy=&quot;false&quot;>|</mo></mrow><mo>&amp;#x2264;</mo><mn>9</mn></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1283" style="width: 3.932em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.277em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.253em, 1003.22em, 2.622em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1284"><span class="texatom" id="MathJax-Span-1285"><span class="mrow" id="MathJax-Span-1286"><span class="mo" id="MathJax-Span-1287" style="font-family: MathJax_Main;">|</span></span></span><span class="mi" id="MathJax-Span-1288" style="font-family: MathJax_Math-italic;">X<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="texatom" id="MathJax-Span-1289"><span class="mrow" id="MathJax-Span-1290"><span class="mo" id="MathJax-Span-1291" style="font-family: MathJax_Main;">|</span></span></span><span class="mo" id="MathJax-Span-1292" style="font-family: MathJax_Main; padding-left: 0.301em;">≤</span><span class="mn" id="MathJax-Span-1293" style="font-family: MathJax_Main; padding-left: 0.301em;">9</span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.354em; border-left: 0px solid; width: 0px; height: 1.361em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mi>X</mi><mrow class="MJX-TeXAtom-ORD"><mo stretchy="false">|</mo></mrow><mo>≤</mo><mn>9</mn></math></span></span><script type="math/tex" id="MathJax-Element-187">|X| \leq 9</script>)
+<b>OUTPUT</b>:
+Decrypted message in all Upper Case characters.
+
+<b>EXAMPLE</b>:
+INPUT: 
+EAPETAMEETTRMHK
+23145
+
+OUTPUT: 
+MEETMEATTHEPARK</div>
+<h5>Start Solving!</span></h5>
+            </div>

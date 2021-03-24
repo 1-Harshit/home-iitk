@@ -1,0 +1,46 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Insertion in Sorted Cyclic Linked List</span><br><small class="category">Practice-10</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><h1 id="insertion-in-sorted-cyclic-linked-list">Insertion in Sorted Cyclic Linked List</h1>
+<p>You are given a cyclic linked list containing <code>N</code> integers sorted in ascending order. A cyclic linked list is a linked list where the next pointer of the last node points to the head. Note that due to this definition, a cyclic linked list does not have a head or a tail node. You are given a node <code>start</code> of this cyclic linked list which could be any node of the list (not necessarily the node with the smallest or largest integer), and an integer <code>x</code> along with it. You need to insert <code>x</code> in the correct position so that after the insertion, the cyclic linked list remains sorted. After insertion, return the address of the original given node <code>start</code>.</p>
+<p>If there are multiple possible positions where x could be inserted, then insert at the first possible position after <code>start</code>. Also, if the given list is empty (i.e. the given node <code>start</code> is <code>NULL</code>), then create a node corresponding to <code>x</code> and return its address.</p>
+<p>Note: The sample code for taking the input and printing the output is already provided to you. You should NOT edit or modify these sections of the code. You only need to add your code in the <code>insertInSortedCyclicList()</code> function template that has been provided.
+Also, the insertion must be performed in place (i.e. you should not make an entirely new linked list every time you insert an element).</p>
+
+<h2 id="input">Input</h2>
+<ul>
+<li>The first line contains an integer <code>N</code>.</li>
+<li>The next line consists of <code>N</code> space-separated integers corresponding to the nodes of the linked list (Since the linked list is cyclic, these values could be cyclically permuted in any order to get the same cyclic linked list but in each case only the node corresponinding to the first value will be passed into your function).</li>
+<li>The next line contains the value <code>x</code> which has to be inserted into the list.</li>
+</ul>
+<p>Note that the input has already been handled for you.</p>
+<h2 id="output">Output</h2>
+<ul>
+<li>The first line of the output should contain <code>N+1</code> space-separated integers corresponding to the nodes of the cyclic linked list after insertion (The first value should be corresponding to the node which was passed into your function, or the new node created if <code>NULL</code> was passed).</li>
+</ul>
+<p>Note that the output has already been handled for you.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1">Example 1</h3>
+<h4 id="input">Input</h4>
+<pre><code><span class="hljs-number">6</span>
+<span class="hljs-symbol">31 </span><span class="hljs-number">34</span> <span class="hljs-number">1</span> <span class="hljs-number">5</span> <span class="hljs-number">15</span> <span class="hljs-number">27</span>
+<span class="hljs-number">30</span>
+</code></pre><h4 id="output">Output</h4>
+<pre><code><span class="hljs-symbol">31 </span><span class="hljs-number">34</span> <span class="hljs-number">1</span> <span class="hljs-number">5</span> <span class="hljs-number">15</span> <span class="hljs-number">27</span> <span class="hljs-number">30</span>
+</code></pre><h3 id="example-2">Example 2</h3>
+<h4 id="input">Input</h4>
+<pre><code><span class="hljs-number">5</span>
+<span class="hljs-symbol">10 </span><span class="hljs-number">25</span> <span class="hljs-number">41</span> <span class="hljs-number">80</span> <span class="hljs-number">4</span>
+<span class="hljs-number">1</span>
+</code></pre><h4 id="output">Output</h4>
+<pre><code><span class="hljs-symbol">10 </span><span class="hljs-number">25</span> <span class="hljs-number">41</span> <span class="hljs-number">80</span> <span class="hljs-number">1</span> <span class="hljs-number">4</span>
+</code></pre><h3 id="example-3">Example 3</h3>
+<h4 id="input">Input</h4>
+<pre><code><span class="hljs-number">0</span>
+<span class="hljs-number">5</span>
+</code></pre><h4 id="output">Output</h4>
+<pre><code><span class="hljs-number">5</span>
+</code></pre><p>Note : Value of N can be between 0 and 1000</p>
+Note : Using linked lists is must [ Not doing so would lead to 0 marks] and strictly follow the given template [ Not doing so would lead to 0 marks]</div>
+<h5>Start Solving!</span></h5>
+            </div>

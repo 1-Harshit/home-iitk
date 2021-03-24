@@ -1,0 +1,25 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Elfish Strings</span><br><small class="category">Bonus7</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">A word is called "elfish" if it contains the letters 'e','l' and 'f' separated by 0 or more characters, in exactly this order. Some examples of elfish words:
+ - selfish
+ - deghlkf
+Note that felish is not an 'elfish' string, since 'e', 'l' and 'f' do not occur in the correct order.
+
+Given a string, if you have to print if it is an elfish string or not.
+
+Contraints: The string can have a maximum of 1000 characters
+
+Input Format: One line containing a string of characters
+Output Format: "Yes" if it is an elfish string, "No" if it is not an elfish string
+
+Hint: It is not necessary to modify the original string or store the output in some string
+
+EXAMPLE
+Input:
+edlrewrefish
+
+Output:
+Yes</div>
+                <h5>Start Solving!</h5>
+            </div>

@@ -1,0 +1,31 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Robber in Dilemma</span><br><small class="category">Bonus7</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">You, along with Alice and Bob, are planning to rob the SnT council bank. In the bank, there are n bags of gold coins. You want to distribute the bags among the 3 robbers, in such a way, that each robber gets an equal number of coins. You cannot transfer a coin from one bag to the other.
+Formally, you will be provided with the count of coins in these n bags, you need to answer with "YES" or "NO", whether you can split the bags among the 3 robbers, such that each of you has an equal number of gold coins. You need to solve this problem for multiple test cases.
+
+<b>NOTE:</b> You need to solve this problem using recursion.
+
+<b>INPUT</b>:
+First line of the input contains a single integer t - denoting the number of test cases you need to solve. Next, you have the description of these t test cases. First line of each test case contains n - denoting the number of bags in SnT bank. Second line of each test case contains n space-separated integers, denoting the count of gold coins in these n bags.
+
+<b>OUTPUT</b>:
+Output t strings in newline, where the <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-154-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msup><mi>i</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>t</mi><mi>h</mi></mrow></msup></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1094" style="width: 1.313em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.074em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.193em, 1001.07em, 2.384em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1095"><span class="msubsup" id="MathJax-Span-1096"><span style="display: inline-block; position: relative; width: 1.074em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.3em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="mi" id="MathJax-Span-1097" style="font-family: MathJax_Math-italic;">i</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.342em; left: 0.36em;"><span class="texatom" id="MathJax-Span-1098"><span class="mrow" id="MathJax-Span-1099"><span class="mi" id="MathJax-Span-1100" style="font-size: 70.7%; font-family: MathJax_Math-italic;">t</span><span class="mi" id="MathJax-Span-1101" style="font-size: 70.7%; font-family: MathJax_Math-italic;">h</span></span></span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.218em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mi>t</mi><mi>h</mi></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-154">i^{th}</script> line contains the answer (in form of "YES" or "NO") to the <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-155-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msup><mi>i</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>t</mi><mi>h</mi></mrow></msup></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1102" style="width: 1.313em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.074em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.193em, 1001.07em, 2.384em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1103"><span class="msubsup" id="MathJax-Span-1104"><span style="display: inline-block; position: relative; width: 1.074em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.3em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="mi" id="MathJax-Span-1105" style="font-family: MathJax_Math-italic;">i</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.342em; left: 0.36em;"><span class="texatom" id="MathJax-Span-1106"><span class="mrow" id="MathJax-Span-1107"><span class="mi" id="MathJax-Span-1108" style="font-size: 70.7%; font-family: MathJax_Math-italic;">t</span><span class="mi" id="MathJax-Span-1109" style="font-size: 70.7%; font-family: MathJax_Math-italic;">h</span></span></span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.218em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>i</mi><mrow class="MJX-TeXAtom-ORD"><mi>t</mi><mi>h</mi></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-155">i^{th}</script> testcase. 
+
+<b>EXAMPLE</b>:
+<b>Sample Input</b>
+2
+6
+1 2 2 2 2 3
+3
+1 1 2
+
+<b>Sample Output</b>
+YES
+NO
+
+<b>Explanation:</b>
+In the first test case there are 6 bags, we can distribute them as: Alice gets {2,2}, Bob gets {2,2}, and you get {1,3}. Since all of you have equal gold coins, partitioning is possible.
+In the second test case, there is no possible way.</div>
+                <h5>Start Solving!</h5>
+            </div>

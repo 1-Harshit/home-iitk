@@ -1,0 +1,20 @@
+<h3>Lab 10 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_10_01.txt')">Reverse a Linked List</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_10_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_10_02.txt')">Insertion in Sorted Cyclic Linked List</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_10_03.txt')">Large Number Arithmetic</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

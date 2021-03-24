@@ -1,0 +1,37 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Gotta swap em all</span><br><small class="category">Bonus6</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">Given an array A of N integers and M swap operations, you must print the final state of the array.
+
+For each pair of indices (i,j) of the array A, you must swap  A[i] and A[j]. 
+
+Any use of arrays ( even for declaration ) will fetch you 0 marks.
+
+
+Input Format:
+First line contains N  - the number of input instances
+For each input instance
+First line contains n and m, where n is the size of integer array A and m is the number of triplet sort operations.
+Second line contains N integers of the array A.
+Each of the next M lines contains two integers corresponding to a swap.
+
+Output Format:
+You must print N comma separated integers corresponding to the final array A after all M sort operations.
+
+Example:
+
+Given Input:
+2
+5 2
+9 5 6 0 3
+0 1
+1 2
+4 1
+4 7 1 2
+1 2
+
+Expected Output:
+5 6 9 0 3
+4 1 7 2</div>
+                <h5>Start Solving!</h5>
+            </div>

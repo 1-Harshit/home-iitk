@@ -1,0 +1,71 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Maze to Vaccine</span><br><small class="category">Practice-3</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">Our own Dr. Strange was very disturbed by COVID-19. So, he decided to use his mystic arts to make a vaccine for everyone. But Dormammu has created an army of mindless ones that will get very powerful if they get the vaccine. To keep the mindless ones out, Dr. Strange decided to create a series of mazes traversing through which only can get you the vaccine, but to keep even a stronger check to get the vaccine you also need to tell a score based on traversal through the maze at the end. He needs your help to select the mazes and get what their score will be.
+
+The maze would be a N*M (given as input) matrix made of 1s and 0s. You must step only on 0s. Our target should be to traverse, where our entry point will the leftmost top corner (0,0) and exit can be through any column of the last row, and after the exit tell the score of traversal. You need to output the score at the end of the traversal. The rules for traversal and scoring are listed below. If there is no path of 0s outside the matrix, it should be rejected by printing "WRONG MAZE" (without the quotes).
+
+<b>Traversal</b>:- To make this problem simple, let's assume that you can only 3 movements to traverse the maze.
+        1. from left to right i.e. ( i, j ) to ( i, j+1 )
+        2. from top to bottom i.e. ( i, j ) to ( i+1, j )
+        3. Diagonally going one column left to right in next row i.e. ( i, j ) to ( i+1, j+1 ) 
+ 
+So, your algorithm's goal should be to keep moving left to right along a row until you hit a 1, and then try to go to the row below. If you can go to the row below, you again start moving along the new row until you hit a 1.<b> Therefore, you use movement 2 or 3 only when movement 1 isn’t possible.</b> Also, movement 1 and 3, is not allowed if you have reached the last column. Keep repeating the procedure until you reach the last row. If you can't, you don't go back and look for a different entry. You just say there is no path (By Printing “WRONG MAZE”) and exit (no input read after that). You need to go as right as possible in the last row just like other rows, in case you can reach the last row. 
+
+<b>Basic movement rule: don't move to a new row unless you can no longer proceed on the current row. </b>
+
+<b>Scoring</b>:- The score only increases when you change a row. At the starting, it is 0. When you change a row, you add to it the cube of the column that is the exit point of that row, going from (i,j) to (i+1,j or j+1) increases the score by j^3. Since the mindless ones cannot calculate the cube we are sure they cannot get the score right. The maze numbering (both rows and columns) starts from 0.
+
+<b>Note</b>: 
+      1. Few marks will be reserved for good programming practices.
+      2. -50% - If arrays are used 
+
+
+<b>Input</b>:
+A single line containing two integers N, M.
+Followed by an N×M grid made of '1' and '0'. The top left, the start of the maze, (0,0) will always be '0'.
+
+<b>Output</b>:
+If we can move out of the maze following the traversal rules, the calculated score. Otherwise, print “WRONG MAZE” (without the quotes).
+ 
+<b>Examples</b>:
+
+INPUT:
+3 3
+0 1 1
+0 0 1
+0 0 0
+
+OUTPUT: 
+9
+
+<b>Explanation</b>: we exit row 0 at 0, row 1 at 1, row 2 at 2. Hence, the score is 0^3+1^3+2^3=9.
+
+
+INPUT:
+3 6
+0 0 1 1 1 1
+1 0 0 0 1 1
+1 1 1 1 0 1
+
+OUTPUT: 
+92
+
+<b>Explanation</b>: we exit row 0 at 1, row 1 at 3, row 2 at 4. Hence, the score is 1^3+3^3+4^3=92.
+
+
+
+
+INPUT:
+3 3
+0 0 1
+0 1 1
+0 0 0
+
+OUTPUT: 
+WRONG MAZE
+
+<b>Explanation</b>: we need to exit row 0 at 1, but in row 1 columns 1 and 2 both are 1, hence it is a maze that will not give a vaccine.
+</div>
+<h5>Start Solving!</span></h5>
+</div>

@@ -1,0 +1,27 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Intersection Point</span><br><small class="category">Practice-6</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><h1 id="intersection-point">Intersection Point</h1>
+<p>In C, a function can return only a single value. However, one can exploit pointers to make a function return more than one value.</p>
+<p>A line in 2-d plane can be uniquely defined by it slope and y-intercept. Given two different lines we need to find the intersection point of the lines. </p>
+<h2 id="input">Input</h2>
+<p>The first and only line of input will contain 4 integers.</p>
+<pre><code><span class="hljs-symbol">m1</span> <span class="hljs-built_in">c1</span> m2 <span class="hljs-built_in">c2</span>
+</code></pre><p>Where m<sub>i</sub> and c<sub>i</sub> are slope and y-intercept of ith line.</p>
+<h2 id="output">Output</h2>
+<p>Print the x-cordinate and y-coordinate of point of intersection. (Rounded to 2 decimal places)
+Note: If lines do not intersect then print -1.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1">Example 1</h3>
+<h4 id="input-">Input:</h4>
+<pre><code><span class="hljs-symbol">2 </span><span class="hljs-number">4</span> <span class="hljs-number">1</span> <span class="hljs-number">10</span>
+</code></pre><h4 id="output-">Output:</h4>
+<pre><code>6<span class="hljs-selector-class">.00</span> 16<span class="hljs-selector-class">.00</span>
+</code></pre><h3 id="example-2">Example 2</h3>
+<h4 id="input-">Input:</h4>
+<pre><code><span class="hljs-symbol">100 </span><span class="hljs-number">3</span> <span class="hljs-number">100</span> <span class="hljs-number">2</span>
+</code></pre><h4 id="output-">Output:</h4>
+<pre><code><span class="hljs-deletion">-1</span>
+</code></pre></div>
+<h5>Start Solving!</span></h5>
+            </div>

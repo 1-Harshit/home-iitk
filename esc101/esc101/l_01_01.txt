@@ -1,0 +1,12 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Fancy Printing</span><br><small class="category">Practice-1</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">Write a C program which prints the output given below.
+
+<b>Output:</b>
+"ESC"-'101\A'
+
+<b>Note:</b><ul><li>You will need to use <b>printf</b> to print your output</li><li>Use the <b>Evaluate</b> option (under Run menu) to check if you passed all the test-cases. You need to print <b>exactly</b> what is mentioned in Output, for the test-cases to pass.</li><li>Submit your code (from File menu) once done. Multiple submits are allowed, and only the last submitted code will be graded. No submissions =&gt; 0 marks</li></ul> 
+</div>
+<h5>Start Solving!</span></h5>
+</div>

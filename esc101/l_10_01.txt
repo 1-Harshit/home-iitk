@@ -1,0 +1,22 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Reverse a Linked List</span><br><small class="category">Practice-10</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><p>Grading Scheme: Correct Output = 2+2+2+2+3+3+3+3 = 20 Marks total. 2 for each visible test case and 3 for each hidden test case. Note: 0 marks would be given if there is any form of hard-coding </p>
+
+<h1 id="reverse-a-linked-list">Reverse a Linked List</h1>
+<p>Given a linked list with a digit in each node, you are required to reverse the linked list in place. You cannot allocate memory for any extra linked list nodes while reversing the list. Doing this will lead to a severe penalty.</p>
+<h2 id="input-">INPUT:</h2>
+<p>First line of input consists of integer <code>N</code> indicating the number of nodes in the linked list.
+Second line of input consists of <code>N</code> integers which form the linked list. </p>
+<h2 id="output-">OUTPUT:</h2>
+<p>The reversed linked list.</p>
+<h3 id="example-">EXAMPLE:</h3>
+<h4 id="input-">INPUT:</h4>
+<pre><code><span class="hljs-number">4</span>
+<span class="hljs-symbol">1 </span><span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span>
+</code></pre><h4 id="output-">OUTPUT:</h4>
+<pre><code><span class="hljs-symbol">4 </span><span class="hljs-number">3</span> <span class="hljs-number">2</span> <span class="hljs-number">1</span>
+</code></pre>
+Note : Using linked lists is must [ Not doing so would lead to 0 marks] </div>
+<h5>Start Solving!</span></h5>
+            </div>

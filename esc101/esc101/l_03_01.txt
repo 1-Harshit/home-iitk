@@ -1,0 +1,27 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Find the Trace</span><br><small class="category">Practice-3</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">Given a square matrix with integer entries, output the trace of the matrix if it is a diagonal matrix, output -1 if it is a non diagonal matrix.
+
+<b>Diagonal matrix</b> - A diagonal matrix is a square matrix in which the entries outside the main diagonal are all zero.
+
+<b>Trace of a square matrix</b> - Trace of a square matrix is the sum of the elements on the main diagonal of the matrix.
+
+
+<b>INPUT</b>:
+Integer n representing the number of rows and columns in the matrix
+followed by a n x n matrix with n rows (each in a new line) and n columns
+
+<b>OUTPUT</b>:
+Trace of the matrix if the matrix is diagonal, -1 otherwise.
+
+<b>EXAMPLE</b>:
+Input :-
+3
+1 0 0
+0 2 0
+0 0 3
+Output :- 6
+Explanation :- The matrix is diagonal with trace = 1 + 2 + 3 = 6. Hence, the output is 6.</div>
+<h5>Start Solving!</span></h5>
+</div>

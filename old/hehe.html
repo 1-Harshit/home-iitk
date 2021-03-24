@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+  <title> Harshit's Home
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <meta name="Author" content="Harshit Raj">
+</head>
+
+
+<style>
+  body,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Tangerine", Georgia;
+    font-size: 40px;
+    text-shadow: 8px 8px 8px #aaa;
+  }
+
+  div {
+    background: linear-gradient(to bottom right, #3366ff 11%, #ff99cc 82%);
+  }
+
+  #mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.4s;
+    padding: 6px;
+    width: 100px;
+    text-decoration: None;
+    font-size: 30px;
+    color: Glossy Black;
+    border-radius: 0 250px 250px 0;
+  }
+
+
+  #mySidenav a:hover {
+    left: 0;
+  }
+
+  #I {
+    top: 20px;
+    background-color: #ff99cc;
+  }
+
+  #II {
+    top: 80px;
+    background-color: #3366ff;
+  }
+
+  #III {
+    top: 140px;
+    background-color: #ff99cc;
+  }
+
+  #IV {
+    top: 200px;
+    background-color: #3366ff
+  }
+
+
+
+
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @font-face {
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tangerine Regular'), local('Tangerine-Regular'),
+      url(Font.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  html {
+    box-sizing: border-box
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit
+  }
+
+  /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+  }
+
+  body {
+    margin: 0
+  }
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block
+  }
+
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block
+  }
+
+  progress {
+    vertical-align: baseline
+  }
+
+  audio:not([controls]) {
+    display: none;
+    height: 0
+  }
+
+  [hidden],
+  template {
+    display: none
+  }
+
+  a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+  }
+
+  a:active,
+  a:hover {
+    outline-width: 0
+  }
+
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+  }
+
+  dfn {
+    font-style: italic
+  }
+
+  mark {
+    background: #ff0;
+    color: #000
+  }
+
+  small {
+    font-size: 80%
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+  }
+
+  sub {
+    bottom: -0.25em
+  }
+
+  sup {
+    top: -0.5em
+  }
+
+  figure {
+    margin: 1em 40px
+  }
+
+  img {
+    border-style: none
+  }
+
+  svg:not(:root) {
+    overflow: hidden
+  }
+
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+  }
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    margin: 0
+  }
+
+  optgroup {
+    font-weight: bold
+  }
+
+  button,
+  input {
+    overflow: visible
+  }
+
+  button,
+  select {
+    text-transform: none
+  }
+
+  button,
+  html [type=button],
+  [type=reset],
+  [type=submit] {
+    -webkit-appearance: button
+  }
+
+  button::-moz-focus-inner,
+  [type=button]::-moz-focus-inner,
+  [type=reset]::-moz-focus-inner,
+  [type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+  }
+
+  button:-moz-focusring,
+  [type=button]:-moz-focusring,
+  [type=reset]:-moz-focusring,
+  [type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+  }
+
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+  }
+
+  legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+  }
+
+  textarea {
+    overflow: auto
+  }
+
+  [type=checkbox],
+  [type=radio] {
+    padding: 0
+  }
+
+  [type=number]::-webkit-inner-spin-button,
+  [type=number]::-webkit-outer-spin-button {
+    height: auto
+  }
+
+  [type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+  }
+
+  [type=search]::-webkit-search-cancel-button,
+  [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+  }
+
+  ::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+  }
+
+  .drac-wide {
+    letter-spacing: 4px
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+  }
+
+  .drac-image {
+    max-width: 100%;
+    height: auto
+  }
+
+  img {
+    margin-bottom: -5px
+  }
+
+  a {
+    color: inherit
+  }
+
+  .drac-table,
+  .drac-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+  }
+
+  .drac-table-all {
+    border: 1px solid #ccc
+  }
+
+  .drac-bordered tr,
+  .drac-table-all tr {
+    border-bottom: 1px solid #ddd
+  }
+
+  .drac-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+  }
+
+  .drac-table-all tr:nth-child(odd) {
+    background-color: #fff
+  }
+
+  .drac-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+  }
+
+  .drac-hoverable tbody tr:hover,
+  .drac-ul.drac-hoverable li:hover {
+    background-color: #ccc
+  }
+
+  .drac-centered tr th,
+  .drac-centered tr td {
+    text-align: center
+  }
+
+  .drac-table td,
+  .drac-table th,
+  .drac-table-all td,
+  .drac-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+  }
+
+  .drac-table th:first-child,
+  .drac-table td:first-child,
+  .drac-table-all th:first-child,
+  .drac-table-all td:first-child {
+    padding-left: 16px
+  }
+
+  .drac-btn,
+  .drac-button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+  }
+
+  .drac-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+
+  .drac-btn,
+  .drac-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+  }
+
+  .drac-disabled,
+  .drac-btn:disabled,
+  .drac-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+  }
+
+  .drac-disabled *,
+  :disabled * {
+    pointer-events: none
+  }
+
+  .drac-btn.drac-disabled:hover,
+  .drac-btn:disabled:hover {
+    box-shadow: none
+  }
+
+  .drac-badge,
+  .drac-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+  }
+
+  .drac-badge {
+    border-radius: 50%
+  }
+
+  .drac-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+  }
+
+  .drac-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+  }
+
+  .drac-ul li:last-child {
+    border-bottom: none
+  }
+
+  .drac-tooltip,
+  .drac-display-container {
+    position: relative
+  }
+
+  .drac-tooltip .drac-text {
+    display: none
+  }
+
+  .drac-tooltip:hover .drac-text {
+    display: inline-block
+  }
+
+  .drac-ripple:active {
+    opacity: 0.5
+  }
+
+  .drac-ripple {
+    transition: opacity 0s
+  }
+
+  .drac-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+  }
+
+  .drac-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+  }
+
+  .drac-dropdown-click,
+  .drac-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+  }
+
+  .drac-dropdown-hover:hover .drac-dropdown-content {
+    display: block;
+    z-index: 1
+  }
+
+  .drac-dropdown-hover:first-child,
+  .drac-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+  }
+
+  .drac-dropdown-hover:hover>.drac-button:first-child,
+  .drac-dropdown-click:hover>.drac-button:first-child {
+    background-color: #ccc;
+    color: #000
+  }
+
+  .drac-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0
+  }
+
+  .drac-check,
+  .drac-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+  }
+
+  .drac-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+  }
+
+  .drac-bar-block .drac-dropdown-hover,
+  .drac-bar-block .drac-dropdown-click {
+    width: 100%
+  }
+
+  .drac-bar-block .drac-dropdown-hover .drac-dropdown-content,
+  .drac-bar-block .drac-dropdown-click .drac-dropdown-content {
+    min-width: 100%
+  }
+
+  .drac-bar-block .drac-dropdown-hover .drac-button,
+  .drac-bar-block .drac-dropdown-click .drac-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+  }
+
+  .drac-main,
+  #main {
+    transition: margin-left .4s
+  }
+
+  .drac-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+  }
+
+  .drac-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+  }
+
+  .drac-bar {
+    width: 100%;
+    overflow: hidden
+  }
+
+  .drac-center .drac-bar {
+    display: inline-block;
+    width: auto
+  }
+
+  .drac-bar .drac-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block
+  }
+
+  .drac-bar .drac-dropdown-hover,
+  .drac-bar .drac-dropdown-click {
+    position: static;
+    float: left
+  }
+
+  .drac-bar .drac-button {
+    white-space: normal
+  }
+
+  .drac-bar-block .drac-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    outline: none;
+    white-space: normal;
+    float: none
+  }
+
+  .drac-bar-block.drac-center .drac-bar-item {
+    text-align: center
+  }
+
+  .drac-block {
+    display: block;
+    width: 100%
+  }
+
+  .drac-responsive {
+    overflow-x: auto
+  }
+
+  .drac-container:after,
+  .drac-container:before,
+  .drac-panel:after,
+  .drac-panel:before,
+  .drac-row:after,
+  .drac-row:before,
+  .drac-row-padding:after,
+  .drac-row-padding:before,
+  .drac-cell-row:before,
+  .drac-cell-row:after,
+  .drac-clear:after,
+  .drac-clear:before,
+  .drac-bar:before,
+  .drac-bar:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+
+  .drac-col,
+  .drac-half,
+  .drac-third,
+  .drac-twothird,
+  .drac-threequarter,
+  .drac-quarter {
+    float: left;
+    width: 100%
+  }
+
+  .drac-col.s1 {
+    width: 8.33333%
+  }
+
+  .drac-col.s2 {
+    width: 16.66666%
+  }
+
+  .drac-col.s3 {
+    width: 24.99999%
+  }
+
+  .drac-col.s4 {
+    width: 33.33333%
+  }
+
+  .drac-col.s5 {
+    width: 41.66666%
+  }
+
+  .drac-col.s6 {
+    width: 49.99999%
+  }
+
+  .drac-col.s7 {
+    width: 58.33333%
+  }
+
+  .drac-col.s8 {
+    width: 66.66666%
+  }
+
+  .drac-col.s9 {
+    width: 74.99999%
+  }
+
+  .drac-col.s10 {
+    width: 83.33333%
+  }
+
+  .drac-col.s11 {
+    width: 91.66666%
+  }
+
+  .drac-col.s12 {
+    width: 99.99999%
+  }
+
+  @media (min-width:601px) {
+    .drac-col.m1 {
+      width: 8.33333%
+    }
+
+    .drac-col.m2 {
+      width: 16.66666%
+    }
+
+    .drac-col.m3,
+    .drac-quarter {
+      width: 24.99999%
+    }
+
+    .drac-col.m4,
+    .drac-third {
+      width: 33.33333%
+    }
+
+    .drac-col.m5 {
+      width: 41.66666%
+    }
+
+    .drac-col.m6,
+    .drac-half {
+      width: 49.99999%
+    }
+
+    .drac-col.m7 {
+      width: 58.33333%
+    }
+
+    .drac-col.m8,
+    .drac-twothird {
+      width: 66.66666%
+    }
+
+    .drac-col.m9,
+    .drac-threequarter {
+      width: 74.99999%
+    }
+
+    .drac-col.m10 {
+      width: 83.33333%
+    }
+
+    .drac-col.m11 {
+      width: 91.66666%
+    }
+
+    .drac-col.m12 {
+      width: 99.99999%
+    }
+  }
+
+  @media (min-width:993px) {
+    .drac-col.l1 {
+      width: 8.33333%
+    }
+
+    .drac-col.l2 {
+      width: 16.66666%
+    }
+
+    .drac-col.l3 {
+      width: 24.99999%
+    }
+
+    .drac-col.l4 {
+      width: 33.33333%
+    }
+
+    .drac-col.l5 {
+      width: 41.66666%
+    }
+
+    .drac-col.l6 {
+      width: 49.99999%
+    }
+
+    .drac-col.l7 {
+      width: 58.33333%
+    }
+
+    .drac-col.l8 {
+      width: 66.66667%
+    }
+
+    .drac-col.l9 {
+      width: 74.99999%
+    }
+
+    .drac-col.l10 {
+      width: 83.33333%
+    }
+
+    .drac-col.l11 {
+      width: 91.66666%
+    }
+
+    .drac-col.l12 {
+      width: 99.99999%
+    }
+  }
+
+  .drac-content {
+    max-width: 980px;
+    margin: auto
+  }
+
+  .drac-rest {
+    overflow: hidden
+  }
+
+  .drac-cell-row {
+    display: table;
+    width: 100%
+  }
+
+  .drac-cell {
+    display: table-cell
+  }
+
+  .drac-cell-top {
+    vertical-align: top
+  }
+
+  .drac-cell-middle {
+    vertical-align: middle
+  }
+
+  .drac-cell-bottom {
+    vertical-align: bottom
+  }
+
+  .drac-hide {
+    display: none !important
+  }
+
+  .drac-show-block,
+  .drac-show {
+    display: block !important
+  }
+
+  .drac-show-inline-block {
+    display: inline-block !important
+  }
+
+  @media (max-width:600px) {
+    .drac-modal-content {
+      margin: 0 10px;
+      width: auto !important
+    }
+
+    .drac-modal {
+      padding-top: 30px
+    }
+
+    .drac-dropdown-hover.drac-mobile .drac-dropdown-content,
+    .drac-dropdown-click.drac-mobile .drac-dropdown-content {
+      position: relative
+    }
+
+    .drac-hide-small {
+      display: none !important
+    }
+
+    .drac-mobile {
+      display: block;
+      width: 100% !important
+    }
+
+    .drac-bar-item.drac-mobile,
+    .drac-dropdown-hover.drac-mobile,
+    .drac-dropdown-click.drac-mobile {
+      text-align: center
+    }
+
+    .drac-dropdown-hover.drac-mobile,
+    .drac-dropdown-hover.drac-mobile .drac-btn,
+    .drac-dropdown-hover.drac-mobile .drac-button,
+    .drac-dropdown-click.drac-mobile,
+    .drac-dropdown-click.drac-mobile .drac-btn,
+    .drac-dropdown-click.drac-mobile .drac-button {
+      width: 100%
+    }
+  }
+
+  @media (max-width:768px) {
+    .drac-modal-content {
+      width: 500px
+    }
+
+    .drac-modal {
+      padding-top: 50px
+    }
+  }
+
+  @media (min-width:993px) {
+    .drac-modal-content {
+      width: 900px
+    }
+
+    .drac-hide-large {
+      display: none !important
+    }
+
+    .drac-sidebar.drac-collapse {
+      display: block !important
+    }
+  }
+
+  @media (max-width:992px) and (min-width:601px) {
+    .drac-hide-medium {
+      display: none !important
+    }
+  }
+
+  @media (max-width:992px) {
+    .drac-sidebar.drac-collapse {
+      display: none
+    }
+
+    .drac-main {
+      margin-left: 0 !important;
+      margin-right: 0 !important
+    }
+  }
+
+  .drac-top,
+  .drac-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+  }
+
+  .drac-top {
+    top: 0
+  }
+
+  .drac-bottom {
+    bottom: 0
+  }
+
+  .drac-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+  }
+
+  .drac-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+  }
+
+  .drac-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+  }
+
+  .drac-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+  }
+
+  .drac-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+  }
+
+  .drac-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+  .drac-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+  }
+
+  .drac-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+  }
+
+  .drac-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+  }
+
+  .drac-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+  }
+
+  .drac-display-container:hover .drac-display-hover {
+    display: block
+  }
+
+  .drac-display-container:hover span.drac-display-hover {
+    display: inline-block
+  }
+
+  .drac-display-hover {
+    display: none
+  }
+
+  .drac-display-position {
+    position: absolute
+  }
+
+  .drac-circle {
+    border-radius: 50%
+  }
+
+  .drac-round-small {
+    border-radius: 2px
+  }
+
+  .drac-round,
+  .drac-round-medium {
+    border-radius: 4px
+  }
+
+  .drac-round-large {
+    border-radius: 8px
+  }
+
+  .drac-round-xlarge {
+    border-radius: 16px
+  }
+
+  .drac-round-xxlarge {
+    border-radius: 32px
+  }
+
+  .drac-row-padding,
+  .drac-row-padding>.drac-half,
+  .drac-row-padding>.drac-third,
+  .drac-row-padding>.drac-twothird,
+  .drac-row-padding>.drac-threequarter,
+  .drac-row-padding>.drac-quarter,
+  .drac-row-padding>.drac-col {
+    padding: 0 8px
+  }
+
+  .drac-container,
+  .drac-panel {
+    padding: 0.01em 16px
+  }
+
+  .drac-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+  }
+
+  .drac-code,
+  .drac-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+  }
+
+  .drac-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+  }
+
+  .drac-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+  }
+
+  .drac-card,
+  .drac-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+  }
+
+  .drac-card-4,
+  .drac-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+
+  .drac-spin {
+    animation: drac-spin 2s infinite linear
+  }
+
+  @keyframes drac-spin {
+    0% {
+      transform: rotate(0deg)
+    }
+
+    100% {
+      transform: rotate(359deg)
+    }
+  }
+
+  .drac-animate-fading {
+    animation: fading 10s infinite
+  }
+
+  @keyframes fading {
+    0% {
+      opacity: 0
+    }
+
+    50% {
+      opacity: 1
+    }
+
+    100% {
+      opacity: 0
+    }
+  }
+
+  .drac-animate-opacity {
+    animation: opac 0.8s
+  }
+
+  @keyframes opac {
+    from {
+      opacity: 0
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  .drac-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+  }
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+
+  .drac-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+  }
+
+  @keyframes animateleft {
+    from {
+      left: -300px;
+      opacity: 0
+    }
+
+    to {
+      left: 0;
+      opacity: 1
+    }
+  }
+
+  .drac-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+  }
+
+  @keyframes animateright {
+    from {
+      right: -300px;
+      opacity: 0
+    }
+
+    to {
+      right: 0;
+      opacity: 1
+    }
+  }
+
+  .drac-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+  }
+
+  @keyframes animatebottom {
+    from {
+      bottom: -300px;
+      opacity: 0
+    }
+
+    to {
+      bottom: 0;
+      opacity: 1
+    }
+  }
+
+  .drac-animate-zoom {
+    animation: animatezoom 0.6s
+  }
+
+  @keyframes animatezoom {
+    from {
+      transform: scale(0)
+    }
+
+    to {
+      transform: scale(1)
+    }
+  }
+
+  .drac-animate-input {
+    transition: width 0.4s ease-in-out
+  }
+
+  .drac-animate-input:focus {
+    width: 100% !important
+  }
+
+  .drac-opacity,
+  .drac-hover-opacity:hover {
+    opacity: 0.60
+  }
+
+  .drac-opacity-off,
+  .drac-hover-opacity-off:hover {
+    opacity: 1
+  }
+
+  .drac-opacity-max {
+    opacity: 0.25
+  }
+
+  .drac-opacity-min {
+    opacity: 0.75
+  }
+
+  .drac-greyscale-max,
+  .drac-grayscale-max,
+  .drac-hover-greyscale:hover,
+  .drac-hover-grayscale:hover {
+    filter: grayscale(100%)
+  }
+
+  .drac-greyscale,
+  .drac-grayscale {
+    filter: grayscale(75%)
+  }
+
+  .drac-greyscale-min,
+  .drac-grayscale-min {
+    filter: grayscale(50%)
+  }
+
+  .drac-sepia {
+    filter: sepia(75%)
+  }
+
+  .drac-sepia-max,
+  .drac-hover-sepia:hover {
+    filter: sepia(100%)
+  }
+
+  .drac-sepia-min {
+    filter: sepia(50%)
+  }
+
+  .drac-tiny {
+    font-size: 10px !important
+  }
+
+  .drac-small {
+    font-size: 12px !important
+  }
+
+  .drac-medium {
+    font-size: 15px !important
+  }
+
+  .drac-large {
+    font-size: 25px !important
+  }
+
+  .drac-xlarge {
+    font-size: 24px !important
+  }
+
+  .drac-xxlarge {
+    font-size: 36px !important
+  }
+
+  .drac-xxxlarge {
+    font-size: 48px !important
+  }
+
+  .drac-jumbo {
+    font-size: 64px !important
+  }
+
+  .drac-left-align {
+    text-align: left !important
+  }
+
+  .drac-right-align {
+    text-align: right !important
+  }
+
+  .drac-justify {
+    text-align: justify !important
+  }
+
+  .drac-center {
+    text-align: center !important
+  }
+
+  .drac-border-0 {
+    border: 0 !important
+  }
+
+  .drac-border {
+    border: 1px solid #ccc !important
+  }
+
+  .drac-border-top {
+    border-top: 1px solid #ccc !important
+  }
+
+  .drac-border-bottom {
+    border-bottom: 1px solid #ccc !important
+  }
+
+  .drac-border-left {
+    border-left: 1px solid #ccc !important
+  }
+
+  .drac-border-right {
+    border-right: 1px solid #ccc !important
+  }
+
+  .drac-topbar {
+    border-top: 6px solid #ccc !important
+  }
+
+  .drac-bottombar {
+    border-bottom: 6px solid #ccc !important
+  }
+
+  .drac-leftbar {
+    border-left: 6px solid #ccc !important
+  }
+
+  .drac-rightbar {
+    border-right: 6px solid #ccc !important
+  }
+
+  .drac-section,
+  .drac-code {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+  }
+
+  .drac-margin {
+    margin: 16px !important
+  }
+
+  .drac-margin-top {
+    margin-top: 16px !important
+  }
+
+  .drac-margin-bottom {
+    margin-bottom: 16px !important
+  }
+
+  .drac-margin-left {
+    margin-left: 16px !important
+  }
+
+  .drac-margin-right {
+    margin-right: 16px !important
+  }
+
+  .drac-padding-small {
+    padding: 4px 8px !important
+  }
+
+  .drac-padding {
+    padding: 8px 16px !important
+  }
+
+  .drac-padding-large {
+    padding: 12px 24px !important
+  }
+
+  .drac-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+  }
+
+  .drac-padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
+  }
+
+  .drac-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+  }
+
+  .drac-padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important
+  }
+
+  .drac-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+  }
+
+  .drac-left {
+    float: left !important
+  }
+
+  .drac-right {
+    float: right !important
+  }
+
+  .drac-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+  }
+
+  .drac-transparent,
+  .drac-hover-none:hover {
+    background-color: transparent !important
+  }
+
+  .drac-hover-none:hover {
+    box-shadow: none !important
+  }
+
+  /* Colors */
+  .drac-amber,
+  .drac-hover-amber:hover {
+    color: #000 !important;
+    background-color: #ffc107 !important
+  }
+
+  .drac-aqua,
+  .drac-hover-aqua:hover {
+    color: #000 !important;
+    background-color: #00ffff !important
+  }
+
+  .drac-blue,
+  .drac-hover-blue:hover {
+    color: #fff !important;
+    background-color: #2196F3 !important
+  }
+
+  .drac-light-blue,
+  .drac-hover-light-blue:hover {
+    color: #000 !important;
+    background-color: #87CEEB !important
+  }
+
+  .drac-brown,
+  .drac-hover-brown:hover {
+    color: #fff !important;
+    background-color: #795548 !important
+  }
+
+  .drac-cyan,
+  .drac-hover-cyan:hover {
+    color: #000 !important;
+    background-color: #00bcd4 !important
+  }
+
+  .drac-blue-grey,
+  .drac-hover-blue-grey:hover,
+  .drac-blue-gray,
+  .drac-hover-blue-gray:hover {
+    color: #fff !important;
+    background-color: #607d8b !important
+  }
+
+  .drac-green,
+  .drac-hover-green:hover {
+    color: #fff !important;
+    background-color: #4CAF50 !important
+  }
+
+  .drac-light-green,
+  .drac-hover-light-green:hover {
+    color: #000 !important;
+    background-color: #8bc34a !important
+  }
+
+  .drac-indigo,
+  .drac-hover-indigo:hover {
+    color: #fff !important;
+    background-color: #3f51b5 !important
+  }
+
+  .drac-khaki,
+  .drac-hover-khaki:hover {
+    color: #000 !important;
+    background-color: #f0e68c !important
+  }
+
+  .drac-lime,
+  .drac-hover-lime:hover {
+    color: #000 !important;
+    background-color: #cddc39 !important
+  }
+
+  .drac-orange,
+  .drac-hover-orange:hover {
+    color: #000 !important;
+    background-color: #ff9800 !important
+  }
+
+  .drac-deep-orange,
+  .drac-hover-deep-orange:hover {
+    color: #fff !important;
+    background-color: #ff5722 !important
+  }
+
+  .drac-pink,
+  .drac-hover-pink:hover {
+    color: #fff !important;
+    background-color: #e91e63 !important
+  }
+
+  .drac-purple,
+  .drac-hover-purple:hover {
+    color: #fff !important;
+    background-color: #9c27b0 !important
+  }
+
+  .drac-deep-purple,
+  .drac-hover-deep-purple:hover {
+    color: #fff !important;
+    background-color: #673ab7 !important
+  }
+
+  .drac-red,
+  .drac-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+  }
+
+  .drac-sand,
+  .drac-hover-sand:hover {
+    color: #000 !important;
+    background-color: #fdf5e6 !important
+  }
+
+  .drac-teal,
+  .drac-hover-teal:hover {
+    color: #fff !important;
+    background-color: #009688 !important
+  }
+
+  .drac-yellow,
+  .drac-hover-yellow:hover {
+    color: #000 !important;
+    background-color: #ffeb3b !important
+  }
+
+  .drac-white,
+  .drac-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+  }
+
+  .drac-black,
+  .drac-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+  }
+
+  .drac-grey,
+  .drac-hover-grey:hover,
+  .drac-gray,
+  .drac-hover-gray:hover {
+    color: #000 !important;
+    background-color: #bbb !important
+  }
+
+  .drac-light-grey,
+  .drac-hover-light-grey:hover,
+  .drac-light-gray,
+  .drac-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+  }
+
+  .drac-dark-grey,
+  .drac-hover-dark-grey:hover,
+  .drac-dark-gray,
+  .drac-hover-dark-gray:hover {
+    color: #fff !important;
+    background-color: #616161 !important
+  }
+
+  .drac-pale-red,
+  .drac-hover-pale-red:hover {
+    color: #000 !important;
+    background-color: #ffdddd !important
+  }
+
+  .drac-pale-green,
+  .drac-hover-pale-green:hover {
+    color: #000 !important;
+    background-color: #ddffdd !important
+  }
+
+  .drac-pale-yellow,
+  .drac-hover-pale-yellow:hover {
+    color: #000 !important;
+    background-color: #ffffcc !important
+  }
+
+  .drac-pale-blue,
+  .drac-hover-pale-blue:hover {
+    color: #000 !important;
+    background-color: #ddffff !important
+  }
+
+  .drac-text-red,
+  .drac-hover-text-red:hover {
+    color: #f44336 !important
+  }
+
+  .drac-text-green,
+  .drac-hover-text-green:hover {
+    color: #4CAF50 !important
+  }
+
+  .drac-text-blue,
+  .drac-hover-text-blue:hover {
+    color: #2196F3 !important
+  }
+
+  .drac-text-yellow,
+  .drac-hover-text-yellow:hover {
+    color: #ffeb3b !important
+  }
+
+  .drac-text-white,
+  .drac-hover-text-white:hover {
+    color: #fff !important
+  }
+
+  .drac-text-black,
+  .drac-hover-text-black:hover {
+    color: #000 !important
+  }
+
+  .drac-text-grey,
+  .drac-hover-text-grey:hover,
+  .drac-text-gray,
+  .drac-hover-text-gray:hover {
+    color: #757575 !important
+  }
+
+  .drac-text-amber {
+    color: #ffc107 !important
+  }
+
+  .drac-text-aqua {
+    color: #00ffff !important
+  }
+
+  .drac-text-light-blue {
+    color: #87CEEB !important
+  }
+
+  .drac-text-brown {
+    color: #795548 !important
+  }
+
+  .drac-text-cyan {
+    color: #00bcd4 !important
+  }
+
+  .drac-text-blue-grey,
+  .drac-text-blue-gray {
+    color: #607d8b !important
+  }
+
+  .drac-text-light-green {
+    color: #8bc34a !important
+  }
+
+  .drac-text-indigo {
+    color: #3f51b5 !important
+  }
+
+  .drac-text-khaki {
+    color: #b4aa50 !important
+  }
+
+  .drac-text-lime {
+    color: #cddc39 !important
+  }
+
+  .drac-text-orange {
+    color: #ff9800 !important
+  }
+
+  .drac-text-deep-orange {
+    color: #ff5722 !important
+  }
+
+  .drac-text-pink {
+    color: #e91e63 !important
+  }
+
+  .drac-text-purple {
+    color: #9c27b0 !important
+  }
+
+  .drac-text-deep-purple {
+    color: #673ab7 !important
+  }
+
+  .drac-text-sand {
+    color: #fdf5e6 !important
+  }
+
+  .drac-text-teal {
+    color: #009688 !important
+  }
+
+  .drac-text-light-grey,
+  .drac-hover-text-light-grey:hover,
+  .drac-text-light-gray,
+  .drac-hover-text-light-gray:hover {
+    color: #f1f1f1 !important
+  }
+
+  .drac-text-dark-grey,
+  .drac-hover-text-dark-grey:hover,
+  .drac-text-dark-gray,
+  .drac-hover-text-dark-gray:hover {
+    color: #3a3a3a !important
+  }
+
+  .drac-border-red,
+  .drac-hover-border-red:hover {
+    border-color: #f44336 !important
+  }
+
+  .drac-border-green,
+  .drac-hover-border-green:hover {
+    border-color: #4CAF50 !important
+  }
+
+  .drac-border-blue,
+  .drac-hover-border-blue:hover {
+    border-color: #2196F3 !important
+  }
+
+  .drac-border-yellow,
+  .drac-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+  }
+
+  .drac-border-white,
+  .drac-hover-border-white:hover {
+    border-color: #fff !important
+  }
+
+  .drac-border-black,
+  .drac-hover-border-black:hover {
+    border-color: #000 !important
+  }
+
+  .drac-border-grey,
+  .drac-hover-border-grey:hover,
+  .drac-border-gray,
+  .drac-hover-border-gray:hover {
+    border-color: #bbb !important
+  }
+</style>
+
+<body>
+  <div max-width:1400px">
+    <header class="drac-container drac-center drac-padding-32">
+      <Font face=Elephant size=65><i> <b>
+            Harshit's Portal </b> </i></font>
+      <p>Welcome to the blog of <big><b><i> Harshit Raj </I></b></big> Nothing Overloaded! </p>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <b> <a href="index.html" href="#" id="I">Home</a>
+        <a href="hehe.html" href="#" id="II">Posts</a>
+        <a href="hehe.html" href="#" id="III">Medias</a>
+        <a href="hehe.html" href="#" id="IV">Contact</a></b>
+    </div>
+    <div class="drac-col l8 s12">
+
+
+      <div class="drac-card-4 drac-margin w3">
+        <img src="001.jpg" alt="Nature" style="width:100%"> <BR>
+
+        <div class="drac-container">
+
+
+          <p style="font-size:500%;">This is a blank site. hehe.
+          </p>
+          <div class="drac-row">
+            <div class="drac-col m8 s12">
+            </div>
+            <div class="drac-col m4 drac-hide-small">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <!-- Blog entry -->
+      <div class="drac-card-4 drac-margin w3">
+        <img src="002.jpg" alt="My Life" style="width:100%">
+
+
+        <div class="drac-container">
+          <Font size=42> <b>About</b> </font>
+          <h5>Umm... leave it, <span class="drac-opacity"><br> Wannabe Perefectionist... :)</span></h5>
+
+          <div class="drac-row">
+            <div class="drac-col m8 s12">
+            </div>
+            <div class="drac-col m4 drac-hide-small">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="drac-col l4">
+      <!-- About Card Gyan ki batein -->
+      <div class="drac-card-2 drac-margin drac-margin-top">
+        <div class="drac-content drac-section" style="max-width:500px">
+          <img class="mySlides drac-animate-zoom" src="003.1.jpg" style="width:100%">
+          <img class="mySlides drac-animate-opacity" src="003.2.jpg" style="width:100%">
+          <img class="mySlides drac-animate-opacity" src="003.3.jpg" style="width:100%">
+          <img class="mySlides drac-animate-opacity" src="003.4.jpg" style="width:100%">
+          <img class="mySlides drac-animate-opacity" src="003.5.jpg" style="width:100%">
+          <img class="mySlides drac-animate-opacity" src="003.6.jpg" style="width:100%">
+          <img class="mySlides drac-animate-opacity" src="003.7.jpg" style="width:100%">
+          <img class="mySlides drac-animate-fading" src="003.8.jpg" style="width:100%">
+        </div>
+
+
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 10 seconds
+          }
+        </script>
+        <div class="drac-container drac-white">
+          <h4><b>Harshit Raj</b></h4>
+          <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of
+            fatasies. I want to explore whole world.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="drac-card-2 drac-margin">
+        <div class="drac-container drac-padding">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="drac-ul drac-hoverable ">
+          <li class="drac-padding-16">
+            <a href="hehe.html" href="#"><img src="004.1.png" alt="IC" class="drac-left drac-margin-right"
+                style="width:50px">
+              <span class="drac-large">Kya janna hai?</span><br>
+              <span>My info</span></A>
+          </li>
+          <li class="drac-padding-16">
+            <a href="hehe.html" href="#"><img src="004.2.png" alt="IC" class="drac-left drac-margin-right"
+                style="width:50px">
+              <span class="drac-large">Please do not open</span><br>
+              <span>Secrets</span>
+          </li>
+          <li class="drac-padding-16">
+            <a href="hehe.html" href="#"><img src="004.3.png" alt="IC" class="drac-left drac-margin-right"
+                style="width:50px">
+              <span class="drac-large">My science proj</span><br>
+              <span>GSF-2016</span>
+          </li>
+          <li class="drac-padding-16">
+            <a href="hehe.html" href="#"><img src="004.3.png" alt="IC" class="drac-left drac-margin-right"
+                style="width:50px">
+              <span class="drac-large">Will find something...</span><br>
+              <span>Popular posts</span>
+          </li>
+
+          </li>
+        </ul>
+      </div>
+
+
+
+
+      <!-- Here it end -->
+    </div>
+
+    <!-- END GRID -->
+  </div><br>
+
+  </div>
+
+  <!-- baki itna padh liye ho to sab chill hoga nai? -->
+  <!-- yaha sab chill hai -->
+
+</body>
+
+</html>

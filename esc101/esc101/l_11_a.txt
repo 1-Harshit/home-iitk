@@ -1,0 +1,216 @@
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include &lt;stdio.h&gt;</span>
+
+<span style="color: #008800; font-weight: bold">const</span> <span style="color: #333399; font-weight: bold">int</span> mod <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">12345</span>;
+
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">solve</span>(<span style="color: #333399; font-weight: bold">int</span> i, <span style="color: #333399; font-weight: bold">int</span> n, <span style="color: #333399; font-weight: bold">int</span> a[])
+{
+    <span style="color: #008800; font-weight: bold">if</span>(i<span style="color: #333333">==</span>n)
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+
+<span style="color: #888888">// has this i been checked before</span>
+    <span style="color: #008800; font-weight: bold">if</span>(a[i])
+        <span style="color: #008800; font-weight: bold">return</span> a[i];
+
+    <span style="color: #333399; font-weight: bold">int</span> temp<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;
+<span style="color: #888888">// if 00 can be appended</span>
+    <span style="color: #008800; font-weight: bold">if</span>(n<span style="color: #333333">-</span>i <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+        temp <span style="color: #333333">=</span> solve(i<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">2</span>, n, a) <span style="color: #333333">%</span> mod;
+<span style="color: #888888">// append 1</span>
+    temp <span style="color: #333333">+=</span> solve(i<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span>, n, a) <span style="color: #333333">%</span> mod;
+<span style="color: #888888">// store result</span>
+    a[i] <span style="color: #333333">=</span> temp<span style="color: #333333">%</span>mod;
+    <span style="color: #008800; font-weight: bold">return</span> a[i];
+}
+
+
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+    <span style="color: #333399; font-weight: bold">int</span> n;
+    scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>n);
+    <span style="color: #888888">// array to store result</span>
+    <span style="color: #333399; font-weight: bold">int</span> a[<span style="color: #0000DD; font-weight: bold">1000000</span>] <span style="color: #333333">=</span> {<span style="color: #0000DD; font-weight: bold">0</span>};
+    
+    <span style="color: #333399; font-weight: bold">int</span> ans <span style="color: #333333">=</span> solve(<span style="color: #0000DD; font-weight: bold">0</span>, n, a);
+    printf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, ans);
+    
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">-----------------------------------</span>
+<span style="color: #557799">#include &lt;stdio.h&gt;</span>
+<span style="color: #557799">#include &lt;stdlib.h&gt;</span>
+
+<span style="color: #888888">// calcualte len of string</span>
+<span style="color: #333399; font-weight: bold">int</span> len(<span style="color: #333399; font-weight: bold">char</span> a[])
+{
+    <span style="color: #333399; font-weight: bold">int</span> t<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> i<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>; a[i]<span style="color: #333333">!=</span><span style="color: #0044DD">&#39;\0&#39;</span>; i<span style="color: #333333">++</span>)
+        t<span style="color: #333333">++</span>;
+    <span style="color: #008800; font-weight: bold">return</span> t;
+}
+
+<span style="color: #333399; font-weight: bold">int</span> main() 
+{
+    <span style="color: #888888">// input </span>
+    <span style="color: #333399; font-weight: bold">char</span> a[<span style="color: #0000DD; font-weight: bold">110</span>];
+    
+    scanf(<span style="background-color: #fff0f0">&quot;%s&quot;</span>, a);
+    <span style="color: #333399; font-weight: bold">int</span> N <span style="color: #333333">=</span> len(a);
+    <span style="color: #888888">// key is order of encryption</span>
+    <span style="color: #333399; font-weight: bold">int</span> key[N<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span>];
+    
+    <span style="color: #333399; font-weight: bold">int</span> k<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;
+    <span style="color: #888888">// check invalid and scan key</span>
+    <span style="color: #333399; font-weight: bold">char</span> c1 <span style="color: #333333">=</span> getchar();
+    c1 <span style="color: #333333">=</span> getchar();
+    <span style="color: #008800; font-weight: bold">while</span>(c1 <span style="color: #333333">!=</span> EOF)
+    {
+        key[k] <span style="color: #333333">=</span> c1<span style="color: #333333">-</span> <span style="color: #0044DD">&#39;0&#39;</span>;
+        k<span style="color: #333333">++</span>;
+        <span style="color: #008800; font-weight: bold">if</span>(k<span style="color: #333333">&gt;</span>N)
+        {
+            printf(<span style="background-color: #fff0f0">&quot;INVALID&quot;</span>);
+            <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+        }
+        c1<span style="color: #333333">=</span>getchar();
+    }
+    
+    <span style="color: #008800; font-weight: bold">if</span>(N<span style="color: #333333">%</span>k<span style="color: #333333">!=</span><span style="color: #0000DD; font-weight: bold">0</span>)
+    {
+        printf(<span style="background-color: #fff0f0">&quot;INVALID&quot;</span>);
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+    }
+    <span style="color: #888888">// use is inverse of key like g(f(x))=x;</span>
+    <span style="color: #333399; font-weight: bold">int</span> use[k];
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> i<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>; i<span style="color: #333333">&lt;</span>k; i<span style="color: #333333">++</span>)
+        use[key[i]<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>]<span style="color: #333333">=</span>i;
+    <span style="color: #888888">// m is width :)</span>
+    <span style="color: #333399; font-weight: bold">int</span> m <span style="color: #333333">=</span> N<span style="color: #333333">/</span>k;
+    <span style="color: #888888">// do the magic</span>
+    <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> j<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>; j<span style="color: #333333">&lt;</span>m; j<span style="color: #333333">++</span>)
+        <span style="color: #008800; font-weight: bold">for</span>(<span style="color: #333399; font-weight: bold">int</span> i<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>; i<span style="color: #333333">&lt;</span>k; i<span style="color: #333333">++</span>)
+        {
+            <span style="color: #333399; font-weight: bold">int</span> t <span style="color: #333333">=</span> j <span style="color: #333333">+</span> use[i]<span style="color: #333333">*</span>m;
+            <span style="color: #008800; font-weight: bold">if</span>(a[t]<span style="color: #333333">==</span><span style="color: #0044DD">&#39;*&#39;</span>)
+                <span style="color: #008800; font-weight: bold">continue</span>;
+            printf(<span style="background-color: #fff0f0">&quot;%c&quot;</span>, a[t]);
+        }
+    
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">----------------------------------</span>
+<span style="color: #557799">#include&lt;stdio.h&gt;</span>
+<span style="color: #557799">#include&lt;stdlib.h&gt;</span>
+
+<span style="color: #008800; font-weight: bold">struct</span> <span style="color: #333399; font-weight: bold">node_t</span>
+{
+   <span style="color: #333399; font-weight: bold">int</span> val;
+   <span style="color: #008800; font-weight: bold">struct</span> <span style="color: #333399; font-weight: bold">node_t</span><span style="color: #333333">*</span> next;
+};
+
+<span style="color: #008800; font-weight: bold">typedef</span> <span style="color: #008800; font-weight: bold">struct</span> <span style="color: #333399; font-weight: bold">node_t</span> node;
+
+<span style="color: #333399; font-weight: bold">int</span> c;
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">insert_at_front</span>(node<span style="color: #333333">**</span> head, <span style="color: #333399; font-weight: bold">int</span> val)
+{
+    <span style="color: #888888">// Write code to insert an element at the front of the linked list</span>
+    node <span style="color: #333333">*</span>new <span style="color: #333333">=</span> (node <span style="color: #333333">*</span>)malloc(<span style="color: #008800; font-weight: bold">sizeof</span>(node));
+    new<span style="color: #333333">-&gt;</span>val <span style="color: #333333">=</span> val;
+    new<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> <span style="color: #333333">*</span>head;
+    <span style="color: #333333">*</span>head <span style="color: #333333">=</span> new;
+}
+ 
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">check_presence</span>(node<span style="color: #333333">*</span> head, <span style="color: #333399; font-weight: bold">int</span> val)
+{
+    <span style="color: #888888">// if an element with value val exists in the linked list with given head</span>
+    <span style="color: #333399; font-weight: bold">int</span> t<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;
+    <span style="color: #008800; font-weight: bold">while</span>(head<span style="color: #333333">!=</span><span style="color: #007020">NULL</span>)
+    {
+        <span style="color: #008800; font-weight: bold">if</span>(head<span style="color: #333333">-&gt;</span>val <span style="color: #333333">==</span> val <span style="color: #333333">&amp;&amp;</span> t<span style="color: #333333">++</span>)
+            <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+        head <span style="color: #333333">=</span> head<span style="color: #333333">-&gt;</span>next;
+    }
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+ 
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">delete_last_element</span>(node<span style="color: #333333">*</span> head)
+{   
+   <span style="color: #888888">//delete the last element from the linked list with the given head</span>
+   node<span style="color: #333333">*</span> pre <span style="color: #333333">=</span> head;
+   head <span style="color: #333333">=</span> head<span style="color: #333333">-&gt;</span>next;
+   <span style="color: #008800; font-weight: bold">while</span>(head<span style="color: #333333">-&gt;</span>next<span style="color: #333333">!=</span><span style="color: #007020">NULL</span>)
+   {
+       pre<span style="color: #333333">=</span> head;
+       head <span style="color: #333333">=</span> head<span style="color: #333333">-&gt;</span>next;
+   }
+   free(head);
+   pre<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>;
+}
+ 
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">delete</span>(node<span style="color: #333333">**</span> head, <span style="color: #333399; font-weight: bold">int</span> val)
+{
+    <span style="color: #888888">// delete node</span>
+    <span style="color: #333399; font-weight: bold">int</span> t<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">1</span>;
+    node <span style="color: #333333">*</span>temp <span style="color: #333333">=</span> <span style="color: #333333">*</span>head;
+    <span style="color: #008800; font-weight: bold">if</span>(temp<span style="color: #333333">-&gt;</span>val<span style="color: #333333">==</span>val)
+        t<span style="color: #333333">--</span>;
+    node <span style="color: #333333">*</span>pre <span style="color: #333333">=</span> temp;
+    temp <span style="color: #333333">=</span> temp<span style="color: #333333">-&gt;</span>next;
+    <span style="color: #008800; font-weight: bold">while</span>(temp<span style="color: #333333">-&gt;</span>val<span style="color: #333333">!=</span>val <span style="color: #333333">||</span> t<span style="color: #333333">--</span>)
+    {
+        pre<span style="color: #333333">=</span>temp;
+        temp <span style="color: #333333">=</span> temp<span style="color: #333333">-&gt;</span>next;
+    }
+    pre<span style="color: #333333">-&gt;</span>next <span style="color: #333333">=</span> temp<span style="color: #333333">-&gt;</span>next;
+    free(temp);
+}
+ 
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">print_list</span>(node<span style="color: #333333">*</span> head)
+{
+    <span style="color: #888888">//print C maxima</span>
+   <span style="color: #008800; font-weight: bold">while</span>(head<span style="color: #333333">!=</span><span style="color: #007020">NULL</span> <span style="color: #333333">&amp;&amp;</span> c<span style="color: #333333">--</span>)
+   {
+       printf(<span style="background-color: #fff0f0">&quot;%d &quot;</span>, head<span style="color: #333333">-&gt;</span>val);
+       head <span style="color: #333333">=</span> head<span style="color: #333333">-&gt;</span>next;
+   }
+}
+ 
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+    <span style="color: #888888">// scan everything</span>
+    <span style="color: #333399; font-weight: bold">int</span> n;
+    scanf(<span style="background-color: #fff0f0">&quot;%d %d&quot;</span>, <span style="color: #333333">&amp;</span>n, <span style="color: #333333">&amp;</span>c);
+    
+    node <span style="color: #333333">*</span>head <span style="color: #333333">=</span> <span style="color: #007020">NULL</span>;
+    
+    <span style="color: #333399; font-weight: bold">int</span> t;
+    <span style="color: #008800; font-weight: bold">while</span>(n<span style="color: #333333">--</span>)
+    {
+        scanf(<span style="background-color: #fff0f0">&quot;%d&quot;</span>, <span style="color: #333333">&amp;</span>t);
+        insert_at_front(<span style="color: #333333">&amp;</span>head, t);
+    }
+    
+    node <span style="color: #333333">*</span>temp <span style="color: #333333">=</span> head;
+    <span style="color: #888888">// drop duplicate</span>
+    <span style="color: #008800; font-weight: bold">while</span>(temp<span style="color: #333333">!=</span><span style="color: #007020">NULL</span>)
+    {
+        t <span style="color: #333333">=</span> temp<span style="color: #333333">-&gt;</span>val;
+        <span style="color: #008800; font-weight: bold">while</span>(check_presence(head, t))
+            delete(<span style="color: #333333">&amp;</span>head, t);
+        temp <span style="color: #333333">=</span> temp<span style="color: #333333">-&gt;</span>next;
+    }
+    
+    print_list(head);
+    
+    <span style="color: #888888">// free everything</span>
+    node<span style="color: #333333">*</span> ptr <span style="color: #333333">=</span> head;
+    <span style="color: #008800; font-weight: bold">while</span>(ptr<span style="color: #333333">!=</span><span style="color: #007020">NULL</span>)
+    {
+        node<span style="color: #333333">*</span> tmp <span style="color: #333333">=</span> ptr<span style="color: #333333">-&gt;</span>next;
+        free(ptr);
+        ptr <span style="color: #333333">=</span> tmp;
+    }
+
+   <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+<span style="color: #333333">-------------</span>
+</pre></div>

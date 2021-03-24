@@ -1,0 +1,87 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Sudoku</span><br><small class="category">Bonus8</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">The Sodoku is a popular puzzle, commonly played in its 9 x 9 version. We will look at a generalization of this puzzle. An n x n Sodoku is defined whenever n is a perfect square like 4 or 9 or 16 etc and is presented as an n x n matrix, each of whose entries is an integer between 1 and n.
+
+Let k be the square root of n. Then for an n x n matrix, we define n non-overlapping <i>boxes</i> as follows. Consider the following example 4 x 4 Sodoku.
+1 2 3 4
+3 4 1 2
+4 3 2 1
+2 1 4 3
+
+Here, the 4 boxes are
+BOX 1
+1 2
+3 4
+
+BOX 2
+3 4
+1 2
+
+BOX 3
+4 3
+2 1
+
+BOX 4
+2 1
+4 3
+
+i.e. the boxes are divided as
+
+1 2   ||  3 4
+3 4   ||  1 2
+=============
+4 3   ||  2 1
+2 1   ||  4 3
+
+Note that boxes are non-overlapping and are numbered left to right and top to bottom. There are exactly n boxes in the matrix. A Sodoku is considered valid if
+<ol>
+<li>Every row of the matrix has all numbers from 1 to n occurring exactly once.
+</li><li>Every column of the matrix has all numbers from 1 to n occurring exactly once.
+</li><li>Every box in the matrix has all numbers from 1 to n occurring exactly once.
+</li></ol>
+
+You will be given n as a strictly positive perfect square integer in the first line of the input. Then you will be given the n rows of this matrix, each row on a separate line, with a single space separating two elements of a row. If the given Sodoku is valid, simply print "Valid Sudoku" (without quotes) in the output and that is it.
+
+However, if the Sodoku is not valid, you have to first described which all rows are invalid (in increasing order of rows) then describe which all columns are invalid (in increasing order of columns) then describe which all boxes are invalid (in increasing order of boxes).
+
+<b>Caution</b>
+<ol>
+<li>We will not penalize you for trailing new lines at the end of your output. However, do not have trailing spaces at the end of any line of your output.
+</li></ol>
+<b>Code to manipulate matrices</b>
+int m, n;
+scanf("%d %d", &amp;m, &amp;n);
+int num[m][n], i, j;
+for(i = 0; i &lt; m; i++)
+	for(j = 0; j &lt; n; j++)
+		scanf("%d", &amp;num[i][j]);    
+		printf("%d", num[i][j]);
+
+<b>HINT</b>: You may use the sqrt function by including math.h to calculate the square root of a number.
+----------------------------------------------------------------------
+<b>EXAMPLE 1</b>:
+INPUT
+4
+1 2 3 4
+3 4 1 2
+4 3 2 1
+2 1 4 3
+
+OUTPUT:
+Valid Sudoku
+
+<b>EXAMPLE 2</b>:
+INPUT
+4
+1 2 3 2
+3 4 1 2
+4 3 2 1
+2 1 4 3
+
+OUTPUT:
+Row 1 is invalid
+Column 4 is invalid
+Box 2 is invalid</div>
+                <h5>Start Solving!</h5>
+            </div>

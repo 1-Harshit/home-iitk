@@ -1,0 +1,27 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">String Compression</span><br><small class="category">Bonus4</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>[40 points]</b>
+
+In the information theory lecture, Prof. Rajat Mittal gave an interesting compression algorithm. This algorithm converts a string of 5 characters into a single character. In the first step of the algorithm, you rotate each character by k places (rotating 'A' by two places will give 'C', rotating 'Z' by one place will give 'A'). Then you convert each of the characters into a number, denoting the position of this character in the alphabets ('A' is converted to 0, 'Z' is converted to 25). Then you add these five numbers and take modulo with 26. Finally, you convert this number back to a character (24 is converted to 'Y', one is converted to 'B').
+
+You will be given a string of length 5, write a program to encode it to a single character, using the algorithm described above.
+
+<b>INPUT</b>:
+First line of the input contains a string of length 5, second line of input contains a single integer denoting k.
+
+<b>OUTPUT</b>:
+Single character, denoting the encoding of the given string.
+
+<b>EXAMPLE</b>:
+INPUT:
+AAAAA
+2
+
+OUTPUT:
+K
+
+Explanation:
+Rotating each character by two places we get "CCCCC", converting each character to number, we get {2,2,2,2,2}, adding these numbers we get 10, which is the character 'K'.</div>
+                <h5>Start Solving!</h5>
+            </div>

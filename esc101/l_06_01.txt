@@ -1,0 +1,23 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Reverse Swapping</span><br><small class="category">Practice-6</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><h1 id="reverse-swapping">Reverse Swapping</h1>
+<p>You are given two arrays A and B of the same size. Write a function to swap the contents of the arrays such that the first element of A is the last element of B, the second element of A is the second-to-last element of B, and so on.</p>
+<p>Note: Your function must have arguments of the form (int*, int*, int).</p>
+<h2 id="input">Input</h2>
+<p>The first line will consist of an integer <code>n</code>.
+The next two lines will each consist of <code>n</code> integers corresponding to arrays A and B.</p>
+<h2 id="output">Output</h2>
+<p>Your output should consist of two lines. The first and second lines should print arrays A and B after swapping.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1">Example 1</h3>
+<h4 id="input">Input</h4>
+<p>3
+1 2 3
+4 5 6</p>
+<h3 id="output">Output</h3>
+<p>6 5 4
+3 2 1</p>
+</div>
+<h5>Start Solving!</span></h5>
+</div>

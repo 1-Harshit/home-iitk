@@ -1,0 +1,39 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title"></span><br><small class="category">Practice-5</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>Grading Scheme: </b> 
+Correct Output = 4+4+4+7+7+7+7 = 40 Marks total. 4 for each visible test case and 7 for each hidden test case.
+<u>Note:</u> 0 marks would be awarded if there is any form of hard-coding.  
+----------------------------------------------------------------------
+
+Two avengers, Hawkeye(H) and Black Widow(B) are highly dependent on Captain America. They speak one number (which represents a weapons sack), each of which directly gets reported to Captain America. Each digit of the number represents a weapon. If the weapons' sack is palindromic, it has high destructive capabilities. For Black Widow, Captain America just tells if the number is palindrome or not (if palindrome print 1 else print 0). For Hawkeye, he tells the minimum number of digits that need to be changed to make it palindromic.
+Note: For both Hawkeye and Black Widow, you need to call Captain_America(). So, you have to pass the information about Hawkeye/Black Widow accordingly (possibly through some argument). Marks will be deducted if this is not followed.
+
+<b>Guideline :</b>
+Make sure that you code using FUNCTIONS to obtain maximum marks. YOU WILL LOSE MARKS IF THIS GUIDELINE IS NOT FOLLOWED.
+
+<b>Input Format: </b>
+A single line containing 2 space-separated integers, the first one (x) representing the number spoken by Black Widow, the second one (y) spoken by Hawkeye.
+x y
+
+<b>Output Format: </b>
+A single line containing two space-separated integers (0/1 in case of Black Widow and the minimum number of digits to be changed to make the number a palindrome, in case of Hawkeye).
+
+<b>Constraints: </b>
+<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-147-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>0</mn><mo>&amp;#x2264;</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>&amp;#x2264;</mo><msup><mn>10</mn><mn>6</mn></msup></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1065" style="width: 7.443em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.193em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.134em, 1006.19em, 2.562em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1066"><span class="mn" id="MathJax-Span-1067" style="font-family: MathJax_Main;">0</span><span class="mo" id="MathJax-Span-1068" style="font-family: MathJax_Main; padding-left: 0.301em;">≤</span><span class="mi" id="MathJax-Span-1069" style="font-family: MathJax_Math-italic; padding-left: 0.301em;">x</span><span class="mo" id="MathJax-Span-1070" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-1071" style="font-family: MathJax_Math-italic; padding-left: 0.182em;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-1072" style="font-family: MathJax_Main; padding-left: 0.301em;">≤</span><span class="msubsup" id="MathJax-Span-1073" style="padding-left: 0.301em;"><span style="display: inline-block; position: relative; width: 1.432em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.96em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="mn" id="MathJax-Span-1074" style="font-family: MathJax_Main;">10</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.402em; left: 1.015em;"><span class="mn" id="MathJax-Span-1075" style="font-size: 70.7%; font-family: MathJax_Main;">6</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.282em; border-left: 0px solid; width: 0px; height: 1.432em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>≤</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>≤</mo><msup><mn>10</mn><mn>6</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-147">0 \leq x, y \leq 10^6</script>
+
+<b>Example: </b>
+Input:
+1023 134421
+Output:
+0 1
+Explanation:
+Note that you can change 3 to 2 in 134421 to make it palindromic
+
+Input:
+1001 1001
+Output:
+1 0
+</div>
+ <h5>Start Solving!</span></h5>
+            </div>

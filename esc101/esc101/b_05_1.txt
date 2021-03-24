@@ -1,0 +1,55 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Functions- Palindromic Number</span><br><small class="category">Bonus5</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>[20 Points]</b>
+
+----------------------------------------------------------------------
+<b>Grading Scheme</b>:
+<b>Note:</b> Give 0 marks for test-case component if there is any form of hard-coding. Eg: printf("0"); 
+
+<table class="table table-bordered">
+	<tbody><tr><th>Marks</th> <th>Component</th></tr>
+        <tr><td colspan="2"><b>I/O and Good Practices</b></td></tr>
+        <tr><td>+1</td> <td>Scanning input properly</td></tr>
+        <tr><td>+1</td> <td>For indentation and comments (or meaningful variable names)</td></tr>
+        <tr><td colspan="2"><b>Logic</b></td></tr>
+        <tr><td>+2</td> <td> Function to check palindrome is well defined. </td></tr>
+        <tr><td>+3</td> <td> Digits are extracted correctly. </td></tr>
+        <tr><td>+4</td> <td> Rest of the logic in function is correct. </td></tr>
+        <tr><td colspan="2"><b>Test case Component</b></td></tr>
+        <tr><td>+3</td> <td>+1 for each passed visible test case</td></tr>
+        <tr><td>+6</td> <td>+3 for each passed invisible test case</td></tr>
+</tbody></table>
+----------------------------------------------------------------------
+
+<b>Note:</b> 
+<ul><li>This is a <u>functions</u> lab and you are expected to use functions (define and call) in all the questions</li>
+<li>Usage of arrays is forbidden in this lab (only concepts until loops/functions are allowed)</li></ul>
+
+A positive integer is said to be palindromic if reversing its digits produces the same number.
+Given a positive integers, determine whether it is palindromic or not.
+
+<b>INPUT</b>:
+First line contains a single integer t, denoting the number of test cases.
+Then t lines follow. Each test case has a single positive integer n.
+
+<b>OUTPUT</b>:
+For each test case output "Yes" if the number is palindromic, "No" otherwise.
+
+<b>CONSTRAINT</b>
+<span class="MathJax_Preview" style="color: inherit; display: none;"></span><div class="MathJax_Display" style="text-align: center;"><span class="MathJax" id="MathJax-Element-145-Frame" tabindex="0" style="text-align: center; position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mn>1</mn><mo>&amp;lt;=</mo><mi>n</mi><mo>&amp;lt;=</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>18</mn></mrow></msup></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1043" style="width: 8.693em; display: inline-block;"><span style="display: inline-block; position: relative; width: 7.205em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.134em, 1007.21em, 2.443em, -999.997em); top: -2.199em; left: 0em;"><span class="mrow" id="MathJax-Span-1044"><span class="mn" id="MathJax-Span-1045" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-1046" style="font-family: MathJax_Main; padding-left: 0.301em;">&lt;<span style="font-family: MathJax_Main;">=</span></span><span class="mi" id="MathJax-Span-1047" style="font-family: MathJax_Math-italic; padding-left: 0.301em;">n</span><span class="mo" id="MathJax-Span-1048" style="font-family: MathJax_Main; padding-left: 0.301em;">&lt;<span style="font-family: MathJax_Main;">=</span></span><span class="msubsup" id="MathJax-Span-1049" style="padding-left: 0.301em;"><span style="display: inline-block; position: relative; width: 1.789em; height: 0px;"><span style="position: absolute; clip: rect(3.158em, 1000.96em, 4.17em, -999.997em); top: -3.985em; left: 0em;"><span class="mn" id="MathJax-Span-1050" style="font-family: MathJax_Main;">10</span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span><span style="position: absolute; top: -4.402em; left: 1.015em;"><span class="texatom" id="MathJax-Span-1051"><span class="mrow" id="MathJax-Span-1052"><span class="mn" id="MathJax-Span-1053" style="font-size: 70.7%; font-family: MathJax_Main;">18</span></span></span><span style="display: inline-block; width: 0px; height: 3.991em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.205em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.139em; border-left: 0px solid; width: 0px; height: 1.289em;"></span></span></nobr><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mn>1</mn><mo>&lt;=</mo><mi>n</mi><mo>&lt;=</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>18</mn></mrow></msup></math></span></span></div><script type="math/tex; mode=display" id="MathJax-Element-145"> 1<=n<=10^{18} </script>
+
+<b>EXAMPLE</b>:
+INPUT: 
+2
+5665
+12
+OUTPUT: 
+Yes
+No
+Explanation:
+5665 gives the same number if read backwards.
+12 gives 21 when digits are reversed. 
+<b>Note:</b> Few marks will be reserved for good programming practices.</div>
+                <h5>Start Solving!</h5>
+            </div>

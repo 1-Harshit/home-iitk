@@ -1,0 +1,32 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Large Number Arithmetic</span><br><small class="category">Practice-10</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><p>Grading Scheme: Correct Output = 5+5+5+5+5+5+5+5+5+5 = 50 Marks total. 5 for each visible test case and 5 for each hidden test case. Note: 0 marks would be given if there is any form of hard-coding </p>
+
+<h1 id="large-number-arithmetic">Large Number Arithmetic</h1>
+<p>You are given two very large numbers <code>a</code> and <code>b</code>. Return the product of <code>a</code> and <code>b</code>.
+Since the numbers are huge, you are supposed to use linked list to store them and perform their arithmetic.</p>
+<p>Hint: Using a doubly linked list might make your code's logic easier and more intuitive.</p>
+<h2 id="input-">INPUT:</h2>
+<p>First line of input consists of integer <code>a</code>.
+Second line of input consists of integer <code>b</code>.
+Third line contains the character '0'.</p>
+<h2 id="output-">OUTPUT:</h2>
+<p>The product. If the product is 0, print "None"</p>
+<h3 id="example-">EXAMPLE:</h3>
+<h4 id="input">INPUT</h4>
+<pre><code><span class="hljs-number">500</span>
+<span class="hljs-number">7</span>
+<span class="hljs-number">0</span>
+</code></pre><h4 id="output">OUTPUT</h4>
+<pre><code><span class="hljs-number">3500</span>
+</code></pre><h4 id="input">INPUT</h4>
+<pre><code><span class="hljs-number">500</span>
+<span class="hljs-number">0</span>
+<span class="hljs-number">0</span>
+</code></pre><h4 id="output">OUTPUT</h4>
+<pre><code><span class="hljs-number">None</span>
+</code></pre>
+Note : Using linked lists is must [ Not doing so would lead to 0 marks]</div>
+<h5>Start Solving!</span></h5>
+            </div>

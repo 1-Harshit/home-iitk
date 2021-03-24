@@ -1,0 +1,26 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Buying Chocolate</span><br><small class="category">Practice-2</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><h1 id="buying-chocolate">Buying Chocolate</h1>
+<p>Ayush has received <code>M</code> rupees from his father today. He goes to a nearby chocolate store. The shopkeeper shows Ayush <code>N</code> options, each with different prices. Ayush loves chocolates, so he wants to buy the most expensive one, which falls under his budget. Ayush is weak in numbers and needs your help.</p>
+<h2 id="input">Input</h2>
+<p>The first line contains two natural numbers <code>N</code> and <code>M</code>. The second line has <code>N</code> distinct natural numbers separated by spaces indicating the price of <code>N</code> chocolates.</p>
+<h2 id="output">Output</h2>
+<p>Print the price of the chocolate which Ayush should buy.
+Note: If Ayush cannot afford any chocolate, then return -1.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1">Example 1</h3>
+<h4 id="input-">Input:</h4>
+<pre><code><span class="hljs-symbol">5 </span><span class="hljs-number">40</span>
+<span class="hljs-symbol">24 </span><span class="hljs-number">16</span> <span class="hljs-number">1</span> <span class="hljs-number">50</span> <span class="hljs-number">100</span>
+</code></pre><h4 id="output-">Output:</h4>
+<pre><code><span class="hljs-number">24</span>
+</code></pre><h3 id="example-2">Example 2</h3>
+<h4 id="input-">Input:</h4>
+<pre><code><span class="hljs-symbol">5 </span><span class="hljs-number">100</span>
+<span class="hljs-symbol">91 </span><span class="hljs-number">74</span> <span class="hljs-number">5</span> <span class="hljs-number">10</span> <span class="hljs-number">100</span>
+</code></pre><h4 id="output-">Output:</h4>
+<pre><code><span class="hljs-number">100</span>
+</code></pre></div>
+<h5>Start Solving!</span></h5>
+</div>

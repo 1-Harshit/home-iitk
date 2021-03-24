@@ -1,0 +1,20 @@
+<h3>Lab 11 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_11_01.txt')">Linked Lists in Life</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_11_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_11_02.txt')">Binary sequences are hard</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_11_03.txt')">Hail Pikachu</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

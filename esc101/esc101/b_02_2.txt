@@ -1,0 +1,11 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Game of chars</span><br><small class="category">Bonus2</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement">You have to input a character and do the following :-
+	1. If the character is an english alphabet (a-z or A-Z), then reverse its case and print.
+	2. If its a digit (0-9), then print the digit obtained by subtracting it from 9.
+	3. For anything else print the character as it is.
+
+Important: You are not allowed to use ASCII codes directly in your program.</div>
+                <h5>Start Solving!</h5>
+            </div>

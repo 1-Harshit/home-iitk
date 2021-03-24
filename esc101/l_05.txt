@@ -1,0 +1,20 @@
+<h3>Lab 5 Questions</h3>
+<p>Select the questions to view problem statement.</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_05_01.txt')">Lab 5 Q1</button><br>
+	    <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_05_a.txt')">Solutions</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_05_02.txt')">Lab 5 Q2</button><br>
+        </div>
+    </div> <!-- end of col -->
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadQues('esc101/l_05_03.txt')">Lab 5 Q3</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

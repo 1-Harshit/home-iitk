@@ -1,0 +1,59 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Expression Evaluator</span><br><small class="category">Practice-4</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><h1>Expression Evaluator</h1>
+
+Write a program that can evaluate arithmetic expressions consisting of single-digit integers as operands and addition/multiplication as operators.
+
+You will receive as input two lines:
+The first line consists of only a single character - this will be either the addition operator '+' or the multiplication operator '*'.
+
+This character will be the operator with higher precedence.
+
+The second line contains an arithmetic expression.
+
+The expression should obey the following rules:
+1) All the operands are single-digit whole numbers [0,9]
+2) Operators are either '+' or '*'
+3) The expression is terminated by ';'
+
+If the expression violates any of the above rules, the output should be -1.
+
+If the expression does not violate any rules, evaluate the expression, with the condition that the character given in the first line of input is to be treated as the operator of higher precedence.
+
+<b>Sample Testcases:</b>
+
+<b>Testcase 1</b>
+Input:
+*
+1+3*2;
+
+Output:
+7
+
+Explanation:
+* is of higher precedence than +. 1+(3*2) = 7
+
+<b>Testcase 2</b>
+Input:
++
+1+3*2;
+
+Output:
+8
+
+Explanation:
++ is of higher precedence than *. (1+3)*2 = 8
+
+<b>Testcase 3</b>
+In:
+*
+1+3*2
+
+Out:
+-1
+
+Explanation:
+The expression is not terminated by ';'</div>
+<h5>Start Solving!</span></h5>
+</div>
