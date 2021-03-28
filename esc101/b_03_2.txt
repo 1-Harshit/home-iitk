@@ -1,0 +1,31 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Missing Death Eater</span><br><small class="category">Bonus3</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>[40 Points]</b>
+
+Followers of The Dark Lord are called Death Eaters. Since The Dark Lord is fascinated by Fibonacci numbers, hence he has given nth Death Eater an id, which is (n+1)th Fibonacci Number. For example, 1st Death Eater has id 1, 2nd Death Eater has id 2. After coming to Power during the end of the Triwizard Tournament, The Dark Lord summons all his Followers, but all except one show up. In this problem, you will be given ids of all Death Eaters who showed up in random order, and you need to find which Death Eater didn’t show up, along with his id. 
+
+<b>INPUT</b>:
+Input consists of a single line which contain space-separated integers denoting ids of Death Eaters in random order. -1 marks the end of Input.
+
+<b>Constraints</b>
+1 &lt;= N &lt;= 80
+
+<b>OUTPUT</b>:
+Output has a single line having two integers, denoting which Death Eater didn’t show up, and his id respectively. 
+
+<b>EXAMPLE</b>:
+
+<b>INPUT</b>:
+2 3 1 8 -1
+
+<b>OUTPUT</b>:
+4 5
+
+<b>Explanation</b>:
+Forming the sequence of Fibonacci Numbers after arranging all the ids given in Ascending order we get, 1,2,3,8. Comparing this sequence with the standard sequence of Fibonacci (1,1,2,3,5,8), we see that 4th Death Eater with id equal to 5th Fibonacci Number, that is 5, didn't show up. Hence answer is 4 5. 
+
+<b>Note:</b> Few marks will be reserved for good programming practices.
+</div>
+                <h5>Start Solving!</h5>
+            </div>
