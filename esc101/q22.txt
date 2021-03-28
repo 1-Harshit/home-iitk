@@ -1,0 +1,14 @@
+<h3>Quiz 2 Questions</h3>
+<p>Session 2</p>
+<object data="esc101/q22.pdf" type="application/pdf" width="100%" height="600px">
+    <embed src="esc101/q22.pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="esc101/q22.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+<div class="row">
+    <div class="col-md-4">
+        <div class="">
+            <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/q21.txt')">Session 1</button><br>
+        </div>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

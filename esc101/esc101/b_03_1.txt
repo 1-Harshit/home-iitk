@@ -1,0 +1,51 @@
+<div id="problem" class="panel-body">
+                <h1><span class="title">Mobile Mixup</span><br><small class="category">Bonus3</small></h1>
+                <hr>
+                <div style="white-space: pre-wrap" class="statement"><b>Mobile Mixup [20 marks]</b>
+
+----------------------------------------------------------------------
+
+<b>Problem Statement</b>
+On planet Vormir, where last week's aliens resided, mobile numbers can be upto 18 digits long and are not of fixed length i.e. some mobile numbers may have just 5 digits and others may have 18 digits. Facebook recently opened its operations in Vormir but its messaging system broke down and transmitted mobile numbers in reverse (Mark Zuckerberg had to apologize in front of the Vormir parliament too).
+
+Vormir aliens know that a real mobile number may end with zero but never start with a zero, just like Earth mobile numbers. However, when the mobile numbers were reversed, the zeros at the end were lost. You will be given two numbers a <b>long integer</b> M containing the reversed mobile number and an <b>integer</b> n tell you how many digits that mobile number has.
+
+In the first line of your output, give the first 3 digits of the original (unreversed) mobile number (no spaces between the digits) and in the next line, give the complete mobile number.
+
+<b>Caution</b>
+<ol>
+<li>Use long variables to input and process the reversed and the original mobile numbers. They may not fit inside an int variable.
+</li><li>Be careful about extra/missing lines and extra/missing spaces.
+</li><li>The partial grading scheme in this question is unusual. See below for grading policy for this question.
+</li></ol>
+
+<b>HINTS</b>: 
+<ol>
+<li>The function log10(n) available from math.h gives you back the base 10 logarithm of a number n. This function can help you in finding the number of digits in an integer n. Include math.h in your code to use this.
+</li></ol>
+----------------------------------------------------------------------
+
+<b>INPUT</b>:
+M n
+
+<b>OUTPUT</b>:
+First three digits of original mobile number (no spaces)
+Complete original mobile number
+
+<b>EXAMPLE</b>:
+INPUT
+9 8
+
+OUTPUT:
+900
+90000000
+----------------------------------------------------------------------
+
+<b>Grading Scheme</b>:
+Total marks: <b>[20 Points]</b>
+
+There will be partial grading in this question. There are two lines in your output. The first line carries 20% weightage and the second line carries 80% weightage. Each visible test case is worth 2 points and each hidden test case is worth 4 points. There are 2 visible and 4 hidden test cases.
+
+Please remember, however, that when you press Submit/Evaluate, you will get a green bar only if all parts of your answer are correct. Thus, if your answer is only partly correct, Prutor will say that you have not passed that test case completely, but when we do autograding afterwards, you will get partial marks.</div>
+                <h5>Start Solving!</h5>
+            </div>
