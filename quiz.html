@@ -144,48 +144,37 @@
     <!-- end of breadcrumbs -->
 
 
-    <!-- Privacy Content -->
+    <!--Content -->
     <div class="ex-basic-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="text-container">
                         <h3>Quiz Questions</h3>
-                        <p>Select one of the week to see questions.</p>
-                        <div class="row">
+                        <p>Select one of the quiz to see questions.</p>
+                        <div class="row" id="flush">
                             <div class="col-md-4">
                                 <div class="">
                                     <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/q11.txt')">Quiz 1 Questions</button><br>
-                                    <!--<button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_02.txt')">Bonus 2 Questions</button><br>
-                                    <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_03.txt')">Bonus 3 Questions</button><br>
-                                    <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_04.txt')">Bonus 4 Questions</button><br>-->
                                 </div>
                             </div> <!-- end of col -->
                             <div class="col-md-4">
                                 <div class="">
                                     <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/q21.txt')">Quiz 2 Questions</button><br>
-                                    <!--<button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_06.txt')">Bonus 6 Questions</button><br>
-                                    <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_07.txt')">Bonus 7 Questions</button><br>
-                                    <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_08.txt')">Bonus 8 Questions</button><br>-->
                                 </div>
                             </div> <!-- end of col -->
                             <div class="col-md-4">
                                 <div class="">
                                     <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/q31.txt')">Quiz 3 Questions</button><br>
-                                    <!--<button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_10.txt')">Bonus 10 Questions</button><br>
-                                    <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_11.txt')">Bonus 11 Questions</button><br>-->
                                 </div>
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->
                     </div> <!-- end of text-container-->
-                    
-                    <div class="text-container" id="listq">
-                    </div> <!-- end of text-container -->
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-2 -->
-    <!-- end of privacy content -->
+    <!-- end of content -->
 
 
     <!-- Breadcrumbs -->
@@ -291,10 +280,10 @@
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("listq").innerHTML = this.responseText;
+                document.getElementById("flush").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", x, true);
+        xhttp.open("GET", "error.txt", true);
         xhttp.send();
     }
     

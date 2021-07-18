@@ -1,0 +1,5 @@
+<div style="width: 100%; max-width: 700px; margin: 0 auto; padding: 30px; background: #fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); border-radius: 3px; border-top: 3px solid #b00f08;">
+      <h1>Error!</h1>
+      <p>The file that you requested was removed due to some reasons.</p>
+      <p style="font-size:x-small;">Ps. contents are removed cuz was suggested by prof this is not a tech glitch :)</p>
+    </div>

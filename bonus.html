@@ -152,7 +152,7 @@
                     <div class="text-container">
                         <h3>Bonus Questions</h3>
                         <p>Select one of the week to see questions.</p>
-                        <div class="row">
+                        <div class="row" id="flush">
                             <div class="col-md-4">
                                 <div class="">
                                     <button type="button" class="btn-outline-reg" onclick="loadIndex('esc101/b_01.txt')">Bonus 1 Questions</button><br>
@@ -182,8 +182,7 @@
                     <div class="text-container" id="listq">
                     </div> <!-- end of text-container -->
                     
-                    <div class="text-container" id="quesl">
-                    </div> <!-- end of text-container -->
+                  
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -290,8 +289,8 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script>
-    function loadIndex(x) {
-        loadQues('esc101/empty.txt');
+     function loadIndex(x) {
+        
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -303,13 +302,14 @@
     }
     
     function loadQues(x) {
+        loadIndex('esc101/empty.txt');
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("quesl").innerHTML = this.responseText;
+                document.getElementById("flush").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", x, true);
+        xhttp.open("GET", "error.txt" , true);
         xhttp.send();
     }
     </script> 
